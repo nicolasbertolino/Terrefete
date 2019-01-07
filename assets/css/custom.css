@@ -22,6 +22,10 @@
 	text-align: justify;
 }
 
+#linear-bg {
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0) 78%,rgba(0,0,0,0) 100%);
+}
+
 .pt0 {
     padding-top: 0 !important;
 }
