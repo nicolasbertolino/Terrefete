@@ -397,13 +397,13 @@ table {
 }
 
 #left-sidebar #main-menu > li.menu-item > a:hover {
-    background:rgba(0,0,0,0.5);
+    background:rgba(0,0,0,0.4);
 }
 
 #left-sidebar #main-menu > li.menu-item.active > * {
     font-family: 'open_sansbold', sans-serif;
     font-weight: bold;
-    background:rgba(0,0,0,0.15);
+    background:rgba(0,0,0,0.4);
 }
 
     @media (min-width: 768px) {
