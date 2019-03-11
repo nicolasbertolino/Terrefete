@@ -2,355 +2,300 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Terrefète — maison en Ariège. Des vacances vertes et pas chères dans un cadre authentique">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Terrefète — maison en Ariège. Des vacances vertes et pas chères dans un cadre authentique">
     <title>Terrefète</title>
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-    <link href="assets/js/vegas/jquery.vegas.min.css" rel="stylesheet">
-    <link href="assets/js/owl-carousel/owl.carousel.css" rel="stylesheet">
-    <link href="assets/js/owl-carousel/owl.theme.css" rel="stylesheet">
-    <link href="assets/js/owl-carousel/owl.transitions.css" rel="stylesheet">
-    <link href="assets/js/wow/animate.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css">
-    <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/js/lightbox/css/lightbox.css" rel="stylesheet">
-    <link href="assets/css/styles.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="assets/css/iziModal.min.css">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 </head>
 
-<body data-default-background-img="assets/images/bg1.jpg" data-overlay="true" data-overlay-opacity="0.35">
-    <!-- Outer Container -->
-    <div id="outer-container">
-        <!-- Left Sidebar -->
-        <section id="left-sidebar">
-            <div class="logo">
-                <a href="#intro" class="link-scroll"><img src="assets/images/logo.png" alt="Twilli Air"></a>
-            </div>
-            <!-- Menu Icon for smaller viewports -->
-            <div id="mobile-menu-icon" class="visible-xs" onClick="toggle_main_menu();"><span class="glyphicon glyphicon-th"></span></div>
-            <ul id="main-menu">
-                <li id="menu-item-text" class="menu-item scroll"><a href="#text">Maison</a></li>
-                <li id="menu-item-carousel" class="menu-item scroll"><a href="#carousel">Activités</a></li>
-                <li id="menu-item-grid" class="menu-item scroll"><a href="#grid">Randonnées</a></li>
-                <li id="menu-item-featured" class="menu-item scroll"><a href="#featured">Histoire</a></li>
-                <li id="menu-item-contact" class="menu-item scroll"><a href="#contact">Réserver</a></li>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo"><a href="#accueil" class="smoothscroll"><img src="assets/images/logo.png"></a></div>
+        <nav>
+            <ul>
+                <li><a href="#maison" class="smoothscroll">Maison</a></li>
+                <li><a href="#activites" class="smoothscroll">Activités</a></li>
+                <li><a href="#randonnees" class="smoothscroll">Randonnées</a></li>
+                <li><a href="#histoire" class="smoothscroll">Histoire</a></li>
+                <li><a href="#reserver" class="smoothscroll">Réserver</a></li>
             </ul>
-        </section>
-        <!-- Introduction -->
-        <section id="main-content" class="clearfix">
-            <article id="intro" class="section-wrapper clearfix" data-custom-background-img="assets/images/bg1.jpg">
-                <div class="content-wrapper clearfix wow fadeInDown" data-wow-delay="0.3s">
-                    <div class="col-sm-10 col-md-9 pull-right">
-                        <section class="feature-text">
-                            <h1>TERREFÈTE</h1>
-                            <p>Des vacances vertes et pas chères dans un cadre authentique.</p>
-                            <p><a href="#text" class="link-scroll btn btn-outline-inverse btn-lg">C'est parti !</a></p>
-                        </section>
-                    </div>
-                </div>
-            </article>
-            <!-- Maison -->
-            <article id="text" class="section-wrapper clearfix" data-custom-background-img="assets/images/bg2.jpg">
-                <div class="content-wrapper clearfix">
-                    <div class="col-sm-10 col-md-9 pull-right">
-                        <h1 class="section-title">La maison</h1>
-                        <p>Niché au coeur de la vallée de la Bellongue, en surplomb d'Augirein – le village en contrebas, Terrefète résonne de son calme et de l'atmosphère paisible qui y règne.</p>
-                        <p>Ce petit hameau est fait d'une dizaine d'habitations et c'est ici, entre forêts et rivières, bercée par les bruits environnants de la nature, que se dresse la maison.</p>
-                        <p>Située en fin de chemin, elle est composée de trois étages : cuisine, salle à manger et salle de bain au rez-de-chaussée ; au premier étage, une chambre et un salon ; et enfin un grenier aménagé accueillant trois couchages au dernier étage.</p>
-                        <p class="btm-space">La maison est entourée d'un jardin entièrement clôturé qui s'étale sur environ 700 m². Balançoire pour les plus jeunes, terrasse en bois couverte, salon de jardin, barbecue, tout est en place pour profiter au mieux de l'espace extérieur.</p>
-                    </div>
-                    <div id="home-carousel" class="owl-carousel">
-                        <div class="item"><a href="assets/images/cuisine1.jpg" data-lightbox="home-gallery"><img class="lazyOwl" src="assets/images/cuisine1.jpg"></a></div>
-                        <div class="item"><a href="assets/images/cuisine2.jpg" data-lightbox="home-gallery"><img class="lazyOwl" src="assets/images/cuisine2.jpg"></a></div>
-                        <div class="item"><a href="assets/images/sejour3.jpg" data-lightbox="home-gallery"><img class="lazyOwl" src="assets/images/sejour3.jpg"></a></div>
-                        <div class="item"><a href="assets/images/salledebain1.jpg" data-lightbox="home-gallery"><img class="lazyOwl" src="assets/images/salledebain1.jpg"></a></div>
-                        <div class="item"><a href="assets/images/chambre1.jpg" data-lightbox="home-gallery"><img class="lazyOwl" src="assets/images/chambre1.jpg"></a></div>
-                        <div class="item"><a href="assets/images/grenier.jpg" data-lightbox="home-gallery"><img class="lazyOwl" src="assets/images/grenier.jpg"></a></div>
-                        <div class="item"><a href="assets/images/terrasse2.jpg" data-lightbox="home-gallery"><img class="lazyOwl" src="assets/images/terrasse2.jpg"></a></div>
-                        <div class="item"><a href="assets/images/terrasse1.jpg" data-lightbox="home-gallery"><img class="lazyOwl" src="assets/images/terrasse1.jpg"></a></div>
-                        <div class="item"><a href="assets/images/terrasse4.jpg" data-lightbox="home-gallery"><img class="lazyOwl" src="assets/images/terrasse4.jpg"></a></div>
-                        <div class="item"><a href="assets/images/terrasse5.jpg" data-lightbox="home-gallery"><img class="lazyOwl" src="assets/images/terrasse5.jpg"></a></div>
-                        <div class="item"><a href="assets/images/jardin1.jpg" data-lightbox="home-gallery"><img class="lazyOwl" src="assets/images/jardin1.jpg"></a></div>
-                        <div class="item"><a href="assets/images/jardin2.jpg" data-lightbox="home-gallery"><img class="lazyOwl" src="assets/images/jardin2.jpg"></a></div>
-                        <div class="item"><a href="assets/images/jardin6.jpg" data-lightbox="home-gallery"><img class="lazyOwl" src="assets/images/jardin6.jpg"></a></div>
-                    </div>
-                    <div class="col-sm-10 col-md-9 pull-right">
-                        <p>Vous trouverez sur place jeux de société, livres divers et bien-sûr, calme et tranquillité.</p>
-                        <p>Vos animaux de compagnie sont les bienvenus.</p>
-                    </div>
-                </div>
-            </article>
-            <!-- Activités -->
-            <article id="carousel" class="section-wrapper clearfix" data-custom-background-img="assets/images/bg3.jpg">
-                <div class="content-wrapper mid-vertical-positioning clearfix">
-                    <div class="col-sm-10 col-md-9 pull-right">
-                        <h1 class="section-title">Activités</h1>
-                        <div class="tabpanel styled-tabs uniform-height" role="tabpanel">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs" role="tablist" text-hidden-xs="true">
-                                <li role="presentation" class="active"><a href="#tabs-tab1" aria-controls="tabs-tab1" role="tab" data-toggle="tab"><i class="icon fa fa-tree"></i><span>Le Parc Naturel Régional des Pyrénées Ariégeoises</span></a></li>
-                                <li role="presentation"><a href="#tabs-tab2" aria-controls="tabs-tab2" role="tab" data-toggle="tab"><i class="icon fas fa-leaf"></i><span>Le Val d'Aran</span></a></li>
-                                <li role="presentation"><a href="#tabs-tab3" aria-controls="tabs-tab3" role="tab" data-toggle="tab"><i class="icon fas fa-skiing"></i><span>Stations de ski</span></a></li>
-                            </ul>
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane fade in active" id="tabs-tab1">
-                                    <img src="assets/images/pnr.jpg" class="pull-right hidden-xs">
-                                    <p>Terrefète est situé au sein du Parc naturel régional, créé en 2009 sur 141 communes des Pyrénées Ariégeoises, pour la richesse et la diversité de leurs patrimoines naturels, culturels et humains.</p>
-                                    <p>Le Parc impulse ou mène des actions dans des domaines aussi divers que la protection de la faune et de la flore, la restauration du patrimoine bâti, la préservation des paysages, la promotion des économies d'énergie et des énergies renouvelables, le management environnemental, l'éducation au territoire, la valorisation de la forêt et du bois, la promotion des savoir-faire et produits locaux, le tourisme durable, ...</p>
-                                    <p>Randonnées moyenne ou haute montagne, circuits VTT, cyclotourisme (circuits des cyclosportives Fabio Casartelli, l'Ariégeoise, la ronde de l'Isard... et de la grande boucle), tennis, équitation, spéléologie, parapente, pêche en lac de montagne ou en rivière, fêtes locales et folkloriques, gastronomie.</p>
-                                    <p><a target="_blank" href="http://www.ariegepyrenees.com/">ariegepyrenees.com</a></p>
-                                    <p class="btm-space"><a target="_blank" href="http://www.parc-pyrenees-ariegeoises.fr/">parc-pyrenees-ariegeoises.fr</a></p>
-                                </div>
-                                <div role="tabpanel" class="tab-pane fade" id="tabs-tab2">
-                                    <img src="assets/images/valdaran.jpg" class="pull-right hidden-xs">
-                                    <p>L'Aran ou le val d'Aran est la vallée voisine du Parc naturel régional des Pyrénées Ariégeoises. C'est une vallée de langue occitane située en Espagne. La Garonne y a sa source avant de se prolonger en France par le Comminges.</p>
-                                    <p>À découvrir : randonnées, rafting, monuments historiques, équitation, sports d'hiver, et bien plus encore.</p>
-                                    <p class="btm-space"><a target="_blank" href="https://www.tripadvisor.fr/Attractions-g6376359-Activities-Val_d_Aran_Province_of_Lleida_Catalonia.html">Val d'Aran - TripAdvisor</a></p>
-                                </div>
-                                <div role="tabpanel" class="tab-pane fade" id="tabs-tab3">
-                                    <img src="assets/images/ski.jpg" class="pull-right hidden-xs">
-                                    <p>Ski de descente, ski nordique, raquettes, luges, randonnées aux flambeaux, ... Plus d'informations sur les sites des stations à proximité de la maison :</p>
-                                    <p><a target="_blank" href="http://www.mourtis.fr/">Le Mourtis</a> — <i>à 40min en voiture</i></p>
-                                    <p><a target="_blank" href="https://www.guzet.fr/">Guzet Neige</a> — <i>à 1h en voiture</i></p>
-                                    <p><a target="_blank" href="http://www.n-py.com/fr/peyragudes">Peyragudes</a> — <i>à 1h15 en voiture</i></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <!-- Randonnées -->
-            <article id="grid" class="section-wrapper clearfix" data-custom-background-img="assets/images/bg4.jpg">
-                <div class="content-wrapper clearfix">
-                    <div class="col-sm-11 col-md-10 pull-right">
-                        <h1 class="section-title">Randonnées</h1>
-                        <p>Les Pyrénées ariégeoises sont au coeur de nombreuses et magnifiques randonnées, promenades et balades à faire seul ou en groupe.</p>
-                        <p class="btm-space" style="text-align: center;">Quelques exemples testés et approuvés :</p>
-                        <div class="row">
-                            <!-- Modal 1 -->
-                            <div class="col">
-                                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-1');" class="btn btn-outline-inverse btn-sm">Au départ de la maison</a></p>
-                                <div class="content-to-populate-in-modal" id="modal-content-1">
-                                    <h1>Villages et hameaux de la Bellongue</h1>
-                                    <img data-img-src="assets/images/randomaison.jpg" class="lazy rounded_border hover_effect pull-right">
-                                    <p class="text-intro">Balade de deux à trois heures au sein de la vallée de la Bellongue à la découverte de villages authentiques. Bâtisses historiques, forêts, rivières, vues somptueuses sur plusieurs montagnes.</p>
-                                    <h6>0h00 — Terrefète</h6>
-                                    <p>Traverser Terrefète et à droite de l'église descendre vers un petit ruisseau "le Nédé" que l'on traverse sur une passerelle, puis remonter en lisière des bois, pour arriver au moulin d'Orgibet.</p>
-                                    <h6>1h00 — Orgibet</h6>
-                                    <p>Monter au village d'Orgibet ; à l'église, prendre le chemin qui conduit à Saint-Jean-Du-Castillonnais en passant par près et bosquets. Saint-Jean-Du-Castillonnais doit son nom aux hospitaliers chevaliers de Saint-Jean (1312). Admirer l'Église Saint-Quentin construite sous les Templiers ; traverser la route pour emprunter le chemin du lieu-dit "le Château".</p>
-                                    <h6>1h15 — Le Château</h6>
-                                    <p>Là, possibilité de redescendre directement sur Augirein en prenant le sentier du "Chemin de Saint-Jacques de Compostelle". Autrement, monter jusqu'au village de Galey où l'on peut admirer le bâti, façades en pierre noires, vieille fontaine, four à pain.</p>
-                                    <h6>1h40 — Galey</h6>
-                                    <p>À la sortie de Galey, en suivant le chemin de procession jusqu'à l'église du Calvaire, vue sur le Maubermé 2880m, le Mont Valier 2838m et le Pic du Moussau 1614m. Coin idéal pour une pause ou un pique-nique.</p>
-                                    <h6>2h00 — Église du Calvaire & Orchein</h6>
-                                    <p>Redescendre sur Orchein à travers champs et bosquets et rejoindre Augirein.</p>
-                                    <h6>2h30 — Augirein</h6>
-                                    <p class="btm-space">Traverser le village et rejoindre Terrefète. Arrivée.</p>
-                                    <div id="unique-id-for-image-slider" class="owl-carousel popup-image-gallery">
-                                        <div>
-                                            <img class="lazyOwl" data-src="assets/images/randomaison1.jpg">
-                                        </div>
-                                        <div>
-                                            <img class="lazyOwl" data-src="assets/images/randomaison2.jpg">
-                                        </div>
-                                        <div>
-                                            <img class="lazyOwl" data-src="assets/images/randomaison4.jpg">
-                                        </div>
-                                        <div>
-                                            <img class="lazyOwl" data-src="assets/images/randomaison5.jpg">
-                                        </div>
-                                        <div>
-                                            <img class="lazyOwl" data-src="assets/images/randomaison6.jpg">
-                                        </div>
-                                        <div>
-                                            <img class="lazyOwl" data-src="assets/images/randomaison7.jpg">
-                                        </div>
-                                        <div>
-                                            <img class="lazyOwl" data-src="assets/images/randomaison8.jpg">
-                                        </div>
-                                        <div>
-                                            <img class="lazyOwl" data-src="assets/images/randomaison11.jpg">
-                                        </div>
-                                        <div>
-                                            <img class="lazyOwl" data-src="assets/images/randomaison3.jpg">
-                                        </div>
-                                        <div>
-                                            <img class="lazyOwl" data-src="assets/images/randomaison10.jpg">
-                                        </div>
-                                        <div>
-                                            <img class="lazyOwl" data-src="assets/images/randomaison9.jpg">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Modal 2 -->
-                            <div class="col">
-                                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-2');" class="btn btn-outline-inverse btn-sm">Promenade sur une demi-journée</a></p>
-                                <div class="content-to-populate-in-modal" id="modal-content-2">
-                                    <h1>La cascade de Nerech</h1>
-                                    <p class="btm-space">La cascade de Nerech, située sur le chemin du Valier, est une belle randonnée de quelques heures à travers forêts et rivières. Facile, elle est l'occasion rêvée d'une excursion en famille.</p>
-                                    <img data-img-src="assets/images/riberot.jpg" class="lazy full-width btm-space" title="Vallée du Ribérot">
-                                    <h6>0h00 — Parking Pla de la Lau (930m)</h6>
-                                    <p>Depuis le parking, emprunter le parcours aménagé qui mène jusqu'à la maison du Valier puis suivre le GR transfrontalier.</p>
-                                    <p>Traverser le Ribérot au niveau d'une passerelle pour passer sur la rive droite et monter à travers une forêt de hêtres.</p>
-                                    <p>Le sentier passe près de la cabane de Nerech puis sort de la forêt vers 1350m au niveau de la remarquable cascade de Nerech que l'on rejoint après 1h30 de marche.</p>
-                                    <h6>1h30 — Cascade de Nerech (1350m)</h6>
-                                    <p class="btm-space">Après avoir profité de la vue et de la fraîcheur de la cascade, le retour se fait par le même itinéraire.</p>
-                                    <img data-img-src="assets/images/nerech.jpg" class="lazy full-width" title="Cascade de Nerech">
-                                </div>
-                            </div>
-                            <!-- Modal 3 -->
-                            <div class="col">
-                                <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-3');" class="btn btn-outline-inverse btn-sm">Pour les plus téméraires</a></p>
-                                <div class="content-to-populate-in-modal" id="modal-content-3">
-                                    <h1>Le Mont Valier</h1>
-                                    <p>Montagne emblématique du Couserans, le Mont Valier est aussi un beau sommet jouissant d'un somptueux panorama.</p>
-                                    <p>Idéalement situé, le refuge des Estagnous permettra de se reposer à mi-parcours en savourant un coucher de soleil souvent exceptionnel.</p>
-                                    <p class="btm-space">Le lendemain, si le temps le permet, le retour en boucle par les Lauzets est l'occasion de découvrir un versant magnifique et sauvage.</p>
-                                    <img data-img-src="assets/images/montvalier.jpg" class="lazy full-width btm-space" title="Mont Valier">
-                                    <p class="btm-space">Itinéraire long, réalisable en une journée, bien qu'il soit préférable de le répartir sur deux jours, avec nuit en bivouac ou <a target="_blank" href="http://refuge-les-estagnous.com/">au refuge des Estagnous.</a></p>
-                                    <h5>Itinéraire aller par la vallée du Ribérot — <i>durée : 5h30</i></h5>
-                                    <h6>0h00 — Parking Pla de la Lau (930m)</h6>
-                                    <p>Au fond du parking, suivre la route jusqu'à la maison du Valier. Poursuivre sur la piste bien balisée, en direction du refuge des Estagnous / Mont Valier.</p>
-                                    <h6>1h30 — Cascade de Nerech (1350m)</h6>
-                                    <p>Traverser sur la passerelle au pied de la cascade, et s'élever en lacet sur un passage rocheux. Poursuivre sans difficulté jusqu'à la cabane des Caussis.</p>
-                                    <h6>2h30 — Cabane des Caussis (1859m)</h6>
-                                    <p>Peu après la cabane, laisser le sentier de gauche montant directement au refuge, et suivre celui de droite signalé par un panneau "Etang Rond" (balisage jaune).</p>
-                                    <p>À l'approche de l'étang une main courante aide à franchir un passage rocheux un peu aérien.</p>
-                                    <h6>3h00 — Etang Rond (1929m)</h6>
-                                    <p><i>Joli étang avec des plages rocheuses propices à la baignade.</i></p>
-                                    <p>Longer brièvement l'étang par la gauche, puis s'élever vers l'est sur un sentier bien tracé. Vers 2020m le sentier s'oriente à gauche (NE) en traversée.</p>
-                                    <p>Vers 2200m, on accède enfin à une zone plus plane. A l'est, le Mont Valier domine. Laisser à notre droite les étangs des Estagnous et s'élever jusqu'au refuge.</p>
-                                    <h6>4h00 — Refuge des Estagnous (2245m)</h6>
-                                    <p>Suivre à droite (E) le chemin du Valier. Il contourne par la droite l'arête ouest du Valier, puis s'élève rudement jusqu'au col Faustin. Des mains courantes aident à franchir les passages les plus délicats.</p>
-                                    <h6>5h00 — Col Faustin (2652m)</h6>
-                                    <p>S'élever à gauche (NE) sur des pentes faciles jusqu'au sommet du Valier.</p>
-                                    <h6>5h30 — Mont Valier (2838m)</h6>
-                                    <p class="btm-space"><i>Croix sommitale en fer forgé inaugurée en 2012, en remplacement de la croix de marbre détruite en 2011.</i></p>
-                                    <img data-img-src="assets/images/montvalierplan.jpg" class="lazy full-width btm-space" title="Itinéraire">
-                                    <h5>Retour par les Lauzets — <i>durée : 7h00</i></h5>
-                                    <h6>5h30 — Mont Valier (2838m)</h6>
-                                    <p>Revenir prudemment par le même itinéraire jusqu'au refuge.</p>
-                                    <h6>6h30 — Refuge des Estagnous (2245m)</h6>
-                                    <p>S'élever au nord sur le sentier du col de Pécouch (balisage jaune). Pentes un peu plus rudes à l'approche du col.</p>
-                                    <h6>7h05 — Col de Pécouch (2462m)</h6>
-                                    <p>Laisser le chemin de la Liberté qui descend à gauche en direction de l'étang du Milouga.</p>
-                                    <p>Partir à droite, en traversée vers l'est, sans pratiquement perdre d'altitude. Tenter de repérer les cairns qui, au bout d'une demi-heure de traversée, nous guident dans une descente plein nord vers l'étang du Cruzous. Il est important de ne pas descendre trop tôt ni trop tard sur les barres rocheuses.</p>
-                                    <h6>8h35 — Etang de Cruzous (2139m)</h6>
-                                    <p>Passer le déversoir et descendre vers l'ouest en suivant le balisage jaune.</p>
-                                    <p>Au bout de quelques minutes, abandonner le sentier de la cabane des Espugues, et descendre au mieux à gauche sur des pentes faciles en direction de l'étang d'Arauech (O-NO). On rejoint l'étang au niveau de sa pointe nord.</p>
-                                    <p>Ne pas tenter de rejoindre directement l'étang du Milouga, mais s'élever au nord au-dessus d'un barre rocheuse. Une sente cairnée nous guide pour franchir un passage rocheux un peu délicat.</p>
-                                    <p>Suivre les cairns jusqu'au déversoir de l'étang.</p>
-                                    <h6>9h30 — Etang de Milouga (1959m)</h6>
-                                    <p>Sans franchir le déversoir, suivre une sente balisée en jaune qui reste pratiquement à niveau jusqu'à la cabane du Taus.</p>
-                                    <h6>10h30 — Cabane de Taus (1900m)</h6>
-                                    <p><i>Cabane ouverte, trois places, bon état. Eau à proximité, cheminée, pas de bois.</i></p>
-                                    <p>Poursuivre toujours à peu prés à niveau sur un sentier tranquille jusqu'au cap des Lauses.</p>
-                                    <h6>10h60 — Cap des Lauzes (1892m)</h6>
-                                    <p>Descendre à gauche (O), en lacet sur le GR10 (balisage rouge et blanc).</p>
-                                    <p>Suivre le GR qui nous ramène sans soucis, sur un joli sentier, jusqu'au ruisseau du Ribérot. Franchir la passerelle et poursuivre à droite (NO) sur le chemin de l'aller pour rejoindre en quelques minutes la maison du Valier, puis le parking.</p>
-                                    <h6 class="btm-space">12h30 — Parking Pla de la Lau (930m)</h6>
-                                    <p class="btm-space">Arrivée.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="pt50">Ou rendez-vous sur <a target="_blank" href="http://www.rando-marche.fr/_2825_randonnees-ariege"><i class="fas fa-hiking"></i> rando-marche.fr</a> pour consulter toutes les randonnées du secteur.</p>
-                    </div>
-                </div>
-            </article>
-            <!-- Histoire -->
-            <article id="featured" class="section-wrapper clearfix" data-custom-background-img="assets/images/bg5.jpg">
-                <div class="content-wrapper clearfix">
-                    <div class="col-sm-10 col-md-9 pull-right">
-                        <h1 class="section-title">Un peu d'histoire</h1>
-                        <h3>« La Guerre des Demoiselles »</h3>
-                        <p>La guerre des Demoiselles est une rébellion ayant lieu en Ariège de 1829 à 1832, et se prolongeant de façon moins intense jusqu'en 1872. Elle est une réaction au Code forestier de 1827. C'est le mouvement de contestation le plus connu parmi ceux qui se développent dans les Pyrénées au XIXe siècle.</p>
-                        <p class="btm-space">Elle doit son nom au fait que les paysans apparaissent déguisés en femmes, avec de longues chemises blanches ou des peaux de moutons, des foulards ou des perruques, le visage noirci ou caché pour attaquer — essentiellement la nuit — les grands propriétaires, les gardes forestiers et gendarmes, les maîtres de forges et les charbonniers.</p>
-                        <!-- Modal 4 -->
-                        <p><a href="" onclick="populate_and_open_modal(event, 'modal-content-4');" class="btn btn-outline-inverse btn-sm">L'histoire des Demoiselles</a></p>
-                        <div class="content-to-populate-in-modal" id="modal-content-4">
-                            <h1>« La Guerre des Demoiselles »</h1>
-                            <img data-img-src="assets/images/laguerredesdemoiselles.jpg" class="lazy full-width btm-space">
-                            <h4>Modification du code forestier par le roi</h4>
-                            <p>En 1829, alors que la population de l'Ariège ne cesse d'augmenter et que les paysans s'appauvrissent, le Roi Charles X décide de reprendre aux communes le sol domanial en instaurant une nouvelle administration forestière.</p>
-                            <p>Ce nouveau code impose « <i>une nouvelle réglementation de l'usage des forêts, en particulier concernant le ramassage du bois, les coupes et surtout le pâturage désormais mis en défens (interdit), le droit de marronnage, et les droits de chasse, de pêche et de cueillette</i> ».</p>
-                            <p>Il s'agit surtout d'une volonté d'intensifier le charbonnage afin d'alimenter principalement l'industrie.</p>
-                            <p>Or depuis le Moyen Âge, le Couserans et les hautes vallées de l'Ariège, reculés, vivent en quasi autarcie. La forêt assure la survie de la population qui la considère comme sienne.</p>
-                            <p class="btm-space">Les paysans des vallées de la Bellongue, de Bethmale, du Biros mais aussi de Massat, s'insurgent et « les Demoiselles » entrent ainsi en scène.</p>
-                            <img data-img-src="assets/images/laguerredesdemoiselles2.jpg" class="lazy full-width btm-space">
-                            <h4>Une riposte populaire</h4>
-                            <p>Les résistances apparaissent pour la première fois au cours d'une opération de saisie, dans la forêt de Saint-Lary, entre le 25 et le 30 mai 1829. Vingt gardes forestiers, ayant surpris six bergers en délit avec leurs troupeaux, veulent s'emparer des bêtes ; mais ils se retrouvent très rapidement face à une centaine de paysans déguisés et armés qui les insultent, leur jettent des pierres et tirent même des coups de fusil. Effrayés et impuissants, les gardes se retirent.</p>
-                            <p>Au mois de juillet 1829, les incidents de ce genre se multiplient et des renforts de gendarmerie — quatre brigades, deux compagnies de ligne sillonnent le Castillonnais et la Bellongue ; deux compagnies surveillent le Saint-Gironnais — n'empêchent pas l'insurrection de s'étendre. Les révoltés ont recours à des tactiques de guérilla consistant à éviter l'affrontement direct avec la troupe et à privilégier les escarmouches avec les gardes forestiers.</p>
-                            <p>À la mi-août 1829, une nouvelle tentative de saisie de bétail en Bellongue, près du petit village de Buzan, provoque l'un des plus vifs affrontements de l'année. Le 16 de ce mois, un inspecteur, deux géomètres et plusieurs gardes et agents forestiers, venus marquer la coupe usagère dans la forêt de Buzan, découvrent deux troupeaux de moutons en délit. Leurs bergers ayant refusé de décliner leur identité, ils sont ligotés dans l'attente d'être envoyés en prison. Aussitôt, plusieurs habitants du village et communes voisines, qui étaient présents au moment de l'altercation, manifestent hautement leur mécontentement. Le tocsin retentit, ameutant les populations alentour. Une armée furieuse de « Demoiselles », munie de bâtons, de faux et de fusils, intervient et libère les prisonniers. Lorsque quelques jours après les gendarmes se présentent pour arrêter les deux bergers, un nouvel attroupement des plus menaçants se forme.</p>
-                            <p>Le 17 décembre 1829, les gardes de la vallée d'Autrech, sur la commune de Saint-Lary, décident de cesser tout service après avoir été menacés par quinze Demoiselles armées de haches. Le 21 janvier 1830, un garde de la famille Lafont de Sentenac est blessé à la tête par un coup de hache et les menaces contre les gardes forestiers augmentent en intensité.</p>
-                            <p>Dans la nuit du 10 au 11 mai, une centaine de Demoiselles attaquent à coups de fusil la maison d'un garde à Saleich, à dix kilomètres au sud de Salies-du-Salat, dans la Haute-Garonne. Le garde riposte et blesse à mort un jeune assaillant de vingt ans.</p>
-                            <p class="btm-space">Ces actions simples et directes, menées contre tous ceux qui entravent la libre utilisation des forêts, sont très rapidement populaires, et le mouvement ne tarde pas à s'étendre dans les régions voisines du département de l'Ariège.</p>
-                            <h4>Propagation de la révolte</h4>
-                            <p>Confortée par les succès de ces premières actions de guérilla, la révolte se propage dans la vallée d'Arbas, en Haute-Garonne, et à la haute Ariège, dans le canton des Cabannes et dans la région d'Ax. À partir de janvier 1830, une bonne partie du département de l'Ariège est en effervescence, et les Demoiselles effectuent plusieurs démonstrations de force. Le 24 janvier, à Balaguères (Castillonnais), le jour de la fête locale, elles défilent dans les rues armées de haches et de fusils, au son d'un hautbois et d'un tambour. Trois jours plus tard, 400 à 500 Demoiselles défilent à Massat en criant : « À bas les gardes forestiers ! » Le 17 février, elles sont à peu près le double et le maire réussit à éviter l'affrontement de justesse.</p>
-                            <p>De telles manifestations montrent le soutien dont bénéficient les Demoiselles auprès des populations et des autorités locales, comme les maires. Les renforts de troupe envoyés sur place se révèlent inopérants, car les actions de guérilla des révoltés sont sporadiques et se développent sur des territoires de montagne très accidentés et mal connus. En 1829 et 1830, les hautes autorités ne s'alarment guère de cette révolte, car les revendications des Demoiselles contre l'administration forestière ne paraissent pas exorbitantes.</p>
-                            <p>À partir de l'été 1830, les actions se font plus violentes et s'étendent à toute l'Ariège. Elles sont dirigées notamment contre les maîtres de forges.</p>
-                            <p>Le 27 septembre, une commission départementale des forêts est mise en place. Les troubles cessent. Ils reprennent en novembre, jusqu'à mars 1831.</p>
-                            <img data-img-src="assets/images/laguerredesdemoiselles3.jpg" class="lazy full-width btm-space">
-                            <h4>Victoire des Demoiselles</h4>
-                            <p>Moins importants, les troubles se manifestent néanmoins de façon sporadique dans les années qui suivent, jusqu'en 1872.</p>
-                            <p>Cette peur, ces actions violentes inciteront le pouvoir à instaurer des mesures d'amnistie et assouplir les lois de cette administration forestière.</p>
-                            <p>Au total, cette révolte ne fit que deux morts en 43 ans. Un garde forestier du côté du « parti de l'ordre », et un paysan du côté des « Demoiselles ».</p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-            <!-- Réserver -->
-            <article id="contact" class="section-wrapper clearfix" data-custom-background-img="assets/images/bg6.jpg">
-                <div class="content-wrapper clearfix">
-                    <div class="col-sm-10 col-md-9 pull-right" id="linear-bg">
-                        <h1 class="section-title">Réserver</h1>
-                        <p><i>« Une maison propre, charmante et accueillante. Un village et des habitants simples, tolérants, gentils, solidaires. »</i></p>
-                        <p class="btm-space"><i>« Nous avons passé un séjour très agréable et 100% reposant. Le confort est au rendez-vous, et les enfants ne sont pas oubliés avec les jeux et caisses de jouets. »</i></p>
-                        <p class="text-center">Envie d'air frais ? Réservez sur <a href="https://www.abritel.fr/location-vacances/p579857">Abritel.fr</a></p>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <!-- Footer -->
-        <section id="footer">
-            <!-- Go to Top -->
-            <div id="go-to-top" onclick="scroll_to_top();"><span class="icon glyphicon glyphicon-chevron-up"></span></div>
-            <div class="footer-link">Réservez sur <a target="_blank" href="https://www.abritel.fr/location-vacances/p579857">Abritel.fr</a></div>
-            <!-- copyright text -->
-            <div class="footer-text-line">&copy; 2018. <a target="_blank" href="https://www.nicolasbertolino.com/">Nicolas Bertolino</a></div>
+        </nav>
+    </header>
+    <!-- Accueil -->
+    <div data-jarallax data-speed="0.4" class="accueil jarallax" style="background: url('assets/images/bg1.jpg');" data-overlay="1" data-gradient="1">
+        <section id="accueil">
+            <div class="container">
+                <h1>TERREFÈTE</h1>
+                <p class="subtitle">Des vacances vertes et pas chères dans un cadre authentique.</p>
+                <p></p><a class="smoothscroll arrow-down" href="#maison"><i class="fas fa-arrow-circle-down"></i></a></p>
+            </div>
         </section>
     </div>
-        <!-- Modal -->
-        <div class="modal fade" id="common-modal" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <div class="modal-body clearfix">
+    <!-- Maison -->
+    <div data-jarallax data-speed="0.4" class="maison jarallax" style="background: url('assets/images/bg2.jpg');" data-overlay="1" data-gradient="1">
+        <section id="maison">
+            <div class="container pb20">
+                <h1>La maison</h1>
+                <p>Niché au coeur de la vallée de la Bellongue, en surplomb d'Augirein – le village en contrebas, Terrefète résonne de son calme et de l'atmosphère paisible qui y règne.</p>
+                <p>Ce petit hameau est fait d'une dizaine d'habitations et c'est ici, entre forêts et rivières, bercée par les bruits environnants de la nature, que se dresse la maison. Située en fin de chemin, elle est composée de trois étages : cuisine, salle à manger et salle de bain au rez-de-chaussée ; au premier étage, une chambre et un salon ; et enfin un grenier aménagé accueillant trois couchages au dernier étage.</p>
+                <p>La maison est entourée d'un jardin entièrement clôturé qui s'étale sur 700 m². Balançoire pour les plus jeunes, terrasse en bois couverte, salon de jardin, barbecue, tout est en place pour profiter au mieux de l'espace extérieur.</p>
+                <p>Vous trouverez sur place jeux de société, livres divers et bien-sûr, calme et tranquillité.</p>
+                <p>Vos animaux de compagnie sont les bienvenus.</p>
+                <!-- Gallery -->
+                <div class="gallery pb70">
+                    <a href="assets/images/cuisine1.jpg" data-lightbox="gallery"><img class="img-gallery" src="assets/images/cuisine1.jpg"></a>
+                    <a href="assets/images/cuisine2.jpg" data-lightbox="gallery"><img class="img-gallery" src="assets/images/cuisine2.jpg"></a>
+                    <a href="assets/images/sejour3.jpg" data-lightbox="gallery"><img class="img-gallery" src="assets/images/sejour3.jpg"></a>
+                    <a href="assets/images/salledebain1.jpg" data-lightbox="gallery"><img class="img-gallery" src="assets/images/salledebain1.jpg"></a>
+                    <a href="assets/images/chambre1.jpg" data-lightbox="gallery"><img class="img-gallery" src="assets/images/chambre1.jpg"></a>
+                    <a href="assets/images/grenier.jpg" data-lightbox="gallery"><img class="img-gallery" src="assets/images/grenier.jpg"></a>
+                    <a href="assets/images/terrasse2.jpg" data-lightbox="gallery"><img class="img-gallery" src="assets/images/terrasse2.jpg"></a>
+                    <a href="assets/images/terrasse1.jpg" data-lightbox="gallery"><img class="img-gallery" src="assets/images/terrasse1.jpg"></a>
+                    <a href="assets/images/terrasse4.jpg" data-lightbox="gallery"><img class="img-gallery" src="assets/images/terrasse4.jpg"></a>
+                    <a href="assets/images/terrasse5.jpg" data-lightbox="gallery"><img class="img-gallery" src="assets/images/terrasse5.jpg"></a>
+                    <a href="assets/images/jardin1.jpg" data-lightbox="gallery"><img class="img-gallery" src="assets/images/jardin1.jpg"></a>
+                    <a href="assets/images/jardin2.jpg" data-lightbox="gallery"><img class="img-gallery" src="assets/images/jardin2.jpg"></a>
+                    <a href="assets/images/jardin6.jpg" data-lightbox="gallery"><img class="img-gallery" src="assets/images/jardin6.jpg"></a>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    <!-- Activités -->
+    <div data-jarallax data-speed="0.4" class="activites jarallax" style="background: url('assets/images/bg3.jpg');" data-overlay="1" data-gradient="1">
+        <section id="activites">
+            <div id="resp-pt0" class="container pt100">
+                <h1 class="pb30">Activités</h1>
+                <!-- Tabs -->
+                <div id="tabs" class="tabpanel">
+                    <ul>
+                        <li><a class="tabnav" href="#tabs-1"><i class="icon fa fa-tree"></i><span>Le Parc Naturel Régional des Pyrénées Ariégeoises</span></a></li>
+                        <li><a class="tabnav" href="#tabs-2"><i class="icon fas fa-leaf"></i><span>Le Val d'Aran</span></a></li>
+                        <li><a class="tabnav" href="#tabs-3"><i class="icon fas fa-skiing"></i><span>Stations de ski</span></a></li>
+                    </ul>
+                    <!-- Tabs content 1 -->
+                    <div id="tabs-1" class="tab pt20">
+                        <div class="tabs-text">
+                            <p>Terrefète est situé au sein du Parc naturel régional, créé en 2009 sur 141 communes des Pyrénées Ariégeoises, pour la richesse et la diversité de leurs patrimoines naturels, culturels et humains.</p>
+                            <p>Le Parc impulse ou mène des actions dans des domaines aussi divers que la protection de la faune et de la flore, la restauration du patrimoine bâti, la préservation des paysages, la promotion des économies d'énergie et des énergies renouvelables, le management environnemental, l'éducation au territoire, la valorisation de la forêt et du bois, la promotion des savoir-faire et produits locaux, le tourisme durable, ...</p>
+                            <p>Randonnées moyenne ou haute montagne, circuits VTT, cyclotourisme (circuits des cyclosportives Fabio Casartelli, l'Ariégeoise, la ronde de l'Isard... et de la grande boucle), tennis, équitation, spéléologie, parapente, pêche en lac de montagne ou en rivière, fêtes locales et folkloriques, gastronomie.</p>
+                            <p><a class="link" target="_blank" href="http://www.ariegepyrenees.com/">ariegepyrenees.com</a></p>
+                            <p><a class="link" target="_blank" href="http://www.parc-pyrenees-ariegeoises.fr/">parc-pyrenees-ariegeoises.fr</a></p>
+                        </div>
+                        <div class="tabs-img pt20">
+                            <img src="assets/images/pnr.jpg">
+                        </div>
+                    </div>
+                    <!-- Tabs content 2 -->
+                    <div id="tabs-2" class="tab pt20">
+                        <div class="tabs-text">
+                            <p>L'Aran ou le val d'Aran est la vallée voisine du Parc naturel régional des Pyrénées Ariégeoises. C'est une vallée de langue occitane située en Espagne. La Garonne y a sa source avant de se prolonger en France par le Comminges.</p>
+                            <p>À découvrir : randonnées, rafting, monuments historiques, équitation, sports d'hiver, et bien plus encore.</p>
+                            <p><a class="link" target="_blank" href="https://www.tripadvisor.fr/Attractions-g6376359-Activities-Val_d_Aran_Province_of_Lleida_Catalonia.html">Val d'Aran - TripAdvisor</a></p>
+                        </div>
+                        <div class="tabs-img pt20">
+                            <img src="assets/images/valdaran.jpg">
+                        </div>
+                    </div>
+                    <!-- Tabs content 3 -->
+                    <div id="tabs-3" class="tab pt20">
+                        <div class="tabs-text">
+                            <p>Ski de descente, ski nordique, raquettes, luges, randonnées aux flambeaux, ... Plus d'informations sur les sites des stations à proximité :</p>
+                            <p><a class="link" target="_blank" href="http://www.mourtis.fr/">Le Mourtis</a> — <i>à 40min en voiture</i></p>
+                            <p><a class="link" target="_blank" href="https://www.guzet.fr/">Guzet Neige</a> — <i>à 1h en voiture</i></p>
+                            <p><a class="link" target="_blank" href="http://www.n-py.com/fr/peyragudes">Peyragudes</a> — <i>à 1h15 en voiture</i></p>
+                        </div>
+                        <div class="tabs-img pt20">
+                            <img src="assets/images/ski.jpg">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+    </div>
+    <!-- Randonnées -->
+    <div data-jarallax data-speed="0.4" class="randonnees jarallax" style="background: url('assets/images/bg4.jpg');" data-overlay="1" data-gradient="1">
+        <section id="randonnees">
+            <div class="container">
+                <h1>Randonnées</h1>
+                <p>Les Pyrénées ariégeoises sont au coeur de nombreuses et magnifiques randonnées, promenades et balades à faire seul ou en groupe.</p>
+                <p>Quelques exemples testés et approuvés :</p>
+                <div class="rando-btns pt50">
+                    <p><a class="trigger btn" data-iziModal-open="#modal-one">Au départ de la maison</a></p>
+                    <p><a class="trigger btn" data-iziModal-open="#modal-two">Promenade sur une demi-journée</a></p>
+                    <p><a class="trigger btn" data-iziModal-open="#modal-three">Pour les plus téméraires</a></p>
+                </div>
+                <!-- Modal 1 -->
+                <div id="modal-one" class="iziModal">
+                    <button data-iziModal-close class="icon-close"><i class="fas fa-times"></i></button>
+                    <h2>Villages et hameaux de la Bellongue</h2>
+                    <div class="intro">
+                        <p>Balade de deux à trois heures au sein de la vallée de la Bellongue à la découverte de villages authentiques. Bâtisses historiques, forêts, rivières, vues somptueuses sur plusieurs montagnes.</p>
+                        <img src="assets/images/randomaison.jpg">
+                    </div>
+                    <h3>0h00 — Terrefète</h3>
+                    <p>Traverser Terrefète et à droite de l'église descendre vers un petit ruisseau "le Nédé" que l'on traverse sur une passerelle, puis remonter en lisière des bois, pour arriver au moulin d'Orgibet.</p>
+                    <h3>1h00 — Orgibet</h3>
+                    <p>Monter au village d'Orgibet ; à l'église, prendre le chemin qui conduit à Saint-Jean-Du-Castillonnais en passant par près et bosquets. Saint-Jean-Du-Castillonnais doit son nom aux hospitaliers chevaliers de Saint-Jean (1312). Admirer l'Église Saint-Quentin construite sous les Templiers ; traverser la route pour emprunter le chemin du lieu-dit "le Château".</p>
+                    <h3>1h15 — Le Château</h3>
+                    <p>Là, possibilité de redescendre directement sur Augirein en prenant le sentier du "Chemin de Saint-Jacques de Compostelle". Autrement, monter jusqu'au village de Galey où l'on peut admirer le bâti, façades en pierre noires, vieille fontaine, four à pain.</p>
+                    <h3>1h40 — Galey</h3>
+                    <p>À la sortie de Galey, en suivant le chemin de procession jusqu'à l'église du Calvaire, vue sur le Maubermé 2880m, le Mont Valier 2838m et le Pic du Moussau 1614m. Coin idéal pour une pause ou un pique-nique.</p>
+                    <h3>2h00 — Église du Calvaire & Orchein</h3>
+                    <p>Redescendre sur Orchein à travers champs et bosquets et rejoindre Augirein.</p>
+                    <h3>2h30 — Augirein</h3>
+                    <p>Traverser le village et rejoindre Terrefète. Arrivée.</p>
+                </div>
+                <!-- Modal 2 -->
+                <div id="modal-two" class="iziModal">
+                    <button data-iziModal-close class="icon-close"><i class="fas fa-times"></i></button>
+                    <h2>La cascade de Nerech</h2>
+                    <p>La cascade de Nerech, située sur le chemin du Valier, est une belle randonnée de quelques heures à travers forêts et rivières. Facile, elle est l'occasion rêvée d'une excursion en famille.</p>
+                    <img src="assets/images/riberot.jpg" title="Vallée du Ribérot">
+                    <h3>0h00 — Parking Pla de la Lau (930m)</h3>
+                    <p>Depuis le parking, emprunter le parcours aménagé qui mène jusqu'à la maison du Valier puis suivre le GR transfrontalier.</p>
+                    <p>Traverser le Ribérot au niveau d'une passerelle pour passer sur la rive droite et monter à travers une forêt de hêtres.</p>
+                    <p>Le sentier passe près de la cabane de Nerech puis sort de la forêt vers 1350m au niveau de la remarquable cascade de Nerech que l'on rejoint après 1h30 de marche.</p>
+                    <h3>1h30 — Cascade de Nerech (1350m)</h3>
+                    <p>Après avoir profité de la vue et de la fraîcheur de la cascade, le retour se fait par le même itinéraire.</p>
+                    <img src="assets/images/nerech.jpg" title="Cascade de Nerech">
+                </div>
+                <!-- Modal 3 -->
+                <div id="modal-three" class="iziModal">
+                    <button data-iziModal-close class="icon-close"><i class="fas fa-times"></i></button>
+                    <h2>Le Mont Valier</h2>
+                    <p>Montagne emblématique du Couserans, le Mont Valier est aussi un beau sommet jouissant d'un somptueux panorama.</p>
+                    <p>Idéalement situé, le refuge des Estagnous permettra de se reposer à mi-parcours en savourant un coucher de soleil souvent exceptionnel.</p>
+                    <p>Le lendemain, si le temps le permet, le retour en boucle par les Lauzets est l'occasion de découvrir un versant magnifique et sauvage.</p>
+                    <img src="assets/images/montvalier.jpg" title="Mont Valier">
+                    <p>Itinéraire long, réalisable en une journée, bien qu'il soit préférable de le répartir sur deux jours, avec nuit en bivouac ou <a target="_blank" href="http://refuge-les-estagnous.com/">au refuge des Estagnous.</a></p>
+                    <h4>Itinéraire aller par la vallée du Ribérot — <i>durée : 5h30</i></h4>
+                    <h3>0h00 — Parking Pla de la Lau (930m)</h3>
+                    <p>Au fond du parking, suivre la route jusqu'à la maison du Valier. Poursuivre sur la piste bien balisée, en direction du refuge des Estagnous / Mont Valier.</p>
+                    <h3>1h30 — Cascade de Nerech (1350m)</h3>
+                    <p>Traverser sur la passerelle au pied de la cascade, et s'élever en lacet sur un passage rocheux. Poursuivre sans difficulté jusqu'à la cabane des Caussis.</p>
+                    <h3>2h30 — Cabane des Caussis (1859m)</h3>
+                    <p>Peu après la cabane, laisser le sentier de gauche montant directement au refuge, et suivre celui de droite signalé par un panneau "Etang Rond" (balisage jaune).</p>
+                    <p>À l'approche de l'étang une main courante aide à franchir un passage rocheux un peu aérien.</p>
+                    <h3>3h00 — Etang Rond (1929m)</h3>
+                    <p><i>Joli étang avec des plages rocheuses propices à la baignade.</i></p>
+                    <p>Longer brièvement l'étang par la gauche, puis s'élever vers l'est sur un sentier bien tracé. Vers 2020m le sentier s'oriente à gauche (NE) en traversée.</p>
+                    <p>Vers 2200m, on accède enfin à une zone plus plane. A l'est, le Mont Valier domine. Laisser à notre droite les étangs des Estagnous et s'élever jusqu'au refuge.</p>
+                    <h3>4h00 — Refuge des Estagnous (2245m)</h3>
+                    <p>Suivre à droite (E) le chemin du Valier. Il contourne par la droite l'arête ouest du Valier, puis s'élève rudement jusqu'au col Faustin. Des mains courantes aident à franchir les passages les plus délicats.</p>
+                    <h3>5h00 — Col Faustin (2652m)</h3>
+                    <p>S'élever à gauche (NE) sur des pentes faciles jusqu'au sommet du Valier.</p>
+                    <h3>5h30 — Mont Valier (2838m)</h3>
+                    <p><i>Croix sommitale en fer forgé inaugurée en 2012, en remplacement de la croix de marbre détruite en 2011.</i></p>
+                    <img src="assets/images/montvalierplan.jpg" title="Itinéraire">
+                    <h4>Retour par les Lauzets — <i>durée : 7h00</i></h4>
+                    <h3>5h30 — Mont Valier (2838m)</h3>
+                    <p>Revenir prudemment par le même itinéraire jusqu'au refuge.</p>
+                    <h3>6h30 — Refuge des Estagnous (2245m)</h3>
+                    <p>S'élever au nord sur le sentier du col de Pécouch (balisage jaune). Pentes un peu plus rudes à l'approche du col.</p>
+                    <h3>7h05 — Col de Pécouch (2462m)</h3>
+                    <p>Laisser le chemin de la Liberté qui descend à gauche en direction de l'étang du Milouga.</p>
+                    <p>Partir à droite, en traversée vers l'est, sans pratiquement perdre d'altitude. Tenter de repérer les cairns qui, au bout d'une demi-heure de traversée, nous guident dans une descente plein nord vers l'étang du Cruzous. Il est important de ne pas descendre trop tôt ni trop tard sur les barres rocheuses.</p>
+                    <h3>8h35 — Etang de Cruzous (2139m)</h3>
+                    <p>Passer le déversoir et descendre vers l'ouest en suivant le balisage jaune.</p>
+                    <p>Au bout de quelques minutes, abandonner le sentier de la cabane des Espugues, et descendre au mieux à gauche sur des pentes faciles en direction de l'étang d'Arauech (O-NO). On rejoint l'étang au niveau de sa pointe nord.</p>
+                    <p>Ne pas tenter de rejoindre directement l'étang du Milouga, mais s'élever au nord au-dessus d'un barre rocheuse. Une sente cairnée nous guide pour franchir un passage rocheux un peu délicat.</p>
+                    <p>Suivre les cairns jusqu'au déversoir de l'étang.</p>
+                    <h3>9h30 — Etang de Milouga (1959m)</h3>
+                    <p>Sans franchir le déversoir, suivre une sente balisée en jaune qui reste pratiquement à niveau jusqu'à la cabane du Taus.</p>
+                    <h3>10h30 — Cabane de Taus (1900m)</h3>
+                    <p><i>Cabane ouverte, trois places, bon état. Eau à proximité, cheminée, pas de bois.</i></p>
+                    <p>Poursuivre toujours à peu prés à niveau sur un sentier tranquille jusqu'au cap des Lauses.</p>
+                    <h3>10h30 — Cap des Lauzes (1892m)</h3>
+                    <p>Descendre à gauche (O), en lacet sur le GR10 (balisage rouge et blanc).</p>
+                    <p>Suivre le GR qui nous ramène sans soucis, sur un joli sentier, jusqu'au ruisseau du Ribérot. Franchir la passerelle et poursuivre à droite (NO) sur le chemin de l'aller pour rejoindre en quelques minutes la maison du Valier, puis le parking.</p>
+                    <h3>12h30 — Parking Pla de la Lau (930m)</h3>
+                    <p>Arrivée.</p>
+                </div>
+                <p class="pt50">Ou rendez-vous sur <a class="link" target="_blank" href="http://www.rando-marche.fr/_2825_randonnees-ariege"><i class="fas fa-hiking"></i> rando-marche.fr</a> pour consulter toutes les randonnées du secteur.</p>
+            </div>
+        </section>
+    </div>
+    <!-- Histoire -->
+    <div data-jarallax data-speed="0.4" class="histoire jarallax" style="background: url('assets/images/bg5.jpg');" data-overlay="1" data-gradient="1">
+        <section id="histoire">
+            <div class="container">
+                <h1>Un peu d'histoire</h1>
+                <h3>« La Guerre des Demoiselles »</h3>
+                <p>La guerre des Demoiselles est une rébellion ayant lieu en Ariège de 1829 à 1832, et se prolongeant de façon moins intense jusqu'en 1872. Elle est une réaction au Code forestier de 1827. C'est le mouvement de contestation le plus connu parmi ceux qui se développent dans les Pyrénées au XIXe siècle.</p>
+                <p>Elle doit son nom au fait que les paysans apparaissent déguisés en femmes, avec de longues chemises blanches ou des peaux de moutons, des foulards ou des perruques, le visage noirci ou caché pour attaquer — essentiellement la nuit — les grands propriétaires, les gardes forestiers et gendarmes, les maîtres de forges et les charbonniers.</p>
+                <p class="pt50"><a class="trigger btn" data-iziModal-open="#modal-four">L'histoire des Demoiselles</a></p>
+                <!-- Modal 4 -->
+                <div id="modal-four" class="iziModal">
+                    <button data-iziModal-close class="icon-close"><i class="fas fa-times"></i></button>
+                    <h2>La Guerre des Demoiselles</h2>
+                    <img src="assets/images/laguerredesdemoiselles.jpg">
+                    <h4>Modification du code forestier par le roi</h4>
+                    <p>En 1829, alors que la population de l'Ariège ne cesse d'augmenter et que les paysans s'appauvrissent, le Roi Charles X décide de reprendre aux communes le sol domanial en instaurant une nouvelle administration forestière.</p>
+                    <p>Ce nouveau code impose « <i>une nouvelle réglementation de l'usage des forêts, en particulier concernant le ramassage du bois, les coupes et surtout le pâturage désormais mis en défens (interdit), le droit de marronnage, et les droits de chasse, de pêche et de cueillette</i> ».</p>
+                    <p>Il s'agit surtout d'une volonté d'intensifier le charbonnage afin d'alimenter principalement l'industrie.</p>
+                    <p>Or depuis le Moyen Âge, le Couserans et les hautes vallées de l'Ariège, reculés, vivent en quasi autarcie. La forêt assure la survie de la population qui la considère comme sienne.</p>
+                    <p>Les paysans des vallées de la Bellongue, de Bethmale, du Biros mais aussi de Massat, s'insurgent et « les Demoiselles » entrent ainsi en scène.</p>
+                    <img src="assets/images/laguerredesdemoiselles2.jpg">
+                    <h4>Une riposte populaire</h4>
+                    <p>Les résistances apparaissent pour la première fois au cours d'une opération de saisie, dans la forêt de Saint-Lary, entre le 25 et le 30 mai 1829. Vingt gardes forestiers, ayant surpris six bergers en délit avec leurs troupeaux, veulent s'emparer des bêtes ; mais ils se retrouvent très rapidement face à une centaine de paysans déguisés et armés qui les insultent, leur jettent des pierres et tirent même des coups de fusil. Effrayés et impuissants, les gardes se retirent.</p>
+                    <p>Au mois de juillet 1829, les incidents de ce genre se multiplient et des renforts de gendarmerie — quatre brigades, deux compagnies de ligne sillonnent le Castillonnais et la Bellongue ; deux compagnies surveillent le Saint-Gironnais — n'empêchent pas l'insurrection de s'étendre. Les révoltés ont recours à des tactiques de guérilla consistant à éviter l'affrontement direct avec la troupe et à privilégier les escarmouches avec les gardes forestiers.</p>
+                    <p>À la mi-août 1829, une nouvelle tentative de saisie de bétail en Bellongue, près du petit village de Buzan, provoque l'un des plus vifs affrontements de l'année. Le 16 de ce mois, un inspecteur, deux géomètres et plusieurs gardes et agents forestiers, venus marquer la coupe usagère dans la forêt de Buzan, découvrent deux troupeaux de moutons en délit. Leurs bergers ayant refusé de décliner leur identité, ils sont ligotés dans l'attente d'être envoyés en prison. Aussitôt, plusieurs habitants du village et communes voisines, qui étaient présents au moment de l'altercation, manifestent hautement leur mécontentement. Le tocsin retentit, ameutant les populations alentour. Une armée furieuse de « Demoiselles », munie de bâtons, de faux et de fusils, intervient et libère les prisonniers. Lorsque quelques jours après les gendarmes se présentent pour arrêter les deux bergers, un nouvel attroupement des plus menaçants se forme.</p>
+                    <p>Le 17 décembre 1829, les gardes de la vallée d'Autrech, sur la commune de Saint-Lary, décident de cesser tout service après avoir été menacés par quinze Demoiselles armées de haches. Le 21 janvier 1830, un garde de la famille Lafont de Sentenac est blessé à la tête par un coup de hache et les menaces contre les gardes forestiers augmentent en intensité.</p>
+                    <p>Dans la nuit du 10 au 11 mai, une centaine de Demoiselles attaquent à coups de fusil la maison d'un garde à Saleich, à dix kilomètres au sud de Salies-du-Salat, dans la Haute-Garonne. Le garde riposte et blesse à mort un jeune assaillant de vingt ans.</p>
+                    <p>Ces actions simples et directes, menées contre tous ceux qui entravent la libre utilisation des forêts, sont très rapidement populaires, et le mouvement ne tarde pas à s'étendre dans les régions voisines du département de l'Ariège.</p>
+                    <h4>Propagation de la révolte</h4>
+                    <p>Confortée par les succès de ces premières actions de guérilla, la révolte se propage dans la vallée d'Arbas, en Haute-Garonne, et à la haute Ariège, dans le canton des Cabannes et dans la région d'Ax. À partir de janvier 1830, une bonne partie du département de l'Ariège est en effervescence, et les Demoiselles effectuent plusieurs démonstrations de force. Le 24 janvier, à Balaguères (Castillonnais), le jour de la fête locale, elles défilent dans les rues armées de haches et de fusils, au son d'un hautbois et d'un tambour. Trois jours plus tard, 400 à 500 Demoiselles défilent à Massat en criant : « À bas les gardes forestiers ! » Le 17 février, elles sont à peu près le double et le maire réussit à éviter l'affrontement de justesse.</p>
+                    <p>De telles manifestations montrent le soutien dont bénéficient les Demoiselles auprès des populations et des autorités locales, comme les maires. Les renforts de troupe envoyés sur place se révèlent inopérants, car les actions de guérilla des révoltés sont sporadiques et se développent sur des territoires de montagne très accidentés et mal connus. En 1829 et 1830, les hautes autorités ne s'alarment guère de cette révolte, car les revendications des Demoiselles contre l'administration forestière ne paraissent pas exorbitantes.</p>
+                    <p>À partir de l'été 1830, les actions se font plus violentes et s'étendent à toute l'Ariège. Elles sont dirigées notamment contre les maîtres de forges.</p>
+                    <p>Le 27 septembre, une commission départementale des forêts est mise en place. Les troubles cessent. Ils reprennent en novembre, jusqu'à mars 1831.</p>
+                    <img src="assets/images/laguerredesdemoiselles3.jpg">
+                    <h4>Victoire des Demoiselles</h4>
+                    <p>Moins importants, les troubles se manifestent néanmoins de façon sporadique dans les années qui suivent, jusqu'en 1872.</p>
+                    <p>Cette peur, ces actions violentes inciteront le pouvoir à instaurer des mesures d'amnistie et assouplir les lois de cette administration forestière.</p>
+                    <p>Au total, cette révolte ne fit que deux morts en 43 ans. Un garde forestier du côté du « parti de l'ordre », et un paysan du côté des « Demoiselles ».</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Réserver -->
+    <div data-jarallax data-speed="0.4" class="reserver jarallax" style="background: url('assets/images/bg6.jpg');" data-overlay="1" data-gradient="1">
+        <section id="reserver">
+            <div class="container">
+                <h1>Réserver</h1>
+                <p><i>« Une maison propre, charmante et accueillante. Un village et des habitants simples, tolérants, gentils, solidaires. »</i></p>
+                <p><i>« Nous avons passé un séjour très agréable et 100% reposant. Le confort est au rendez-vous, et les enfants ne sont pas oubliés avec les jeux et caisses de jouets. »</i></p>
+                <p>Envie d'air frais ? Réservez sur <a class="link" href="https://www.abritel.fr/location-vacances/p579857">Abritel.fr</a></p>
+            </div>
+        </section>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>Réservez sur <a target="_blank" href="https://www.abritel.fr/location-vacances/p579857">Abritel.fr</a></p>
+        <!-- copyright text -->
+        <p>&copy; 2018. <a target="_blank" href="https://www.nicolasbertolino.com/">Nicolas Bertolino</a></p>
+    </footer>
+    <!-- Scroll Top -->
+    <a class="scroll-top" href="#top">
+        <span class="fa fa-angle-up"></span>
+    </a>
     <!-- Scripts -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>
-    window.jQuery || document.write('<script src="assets/js/jquery-1.11.2.min.js"><\/script>')
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.easing.1.3.js"></script>
-    <script src="assets/js/vegas/jquery.vegas.min.js"></script>
-    <script src="assets/js/detectmobilebrowser.js"></script>
-    <script src="assets/js/jquery.scrollstop.min.js"></script>
-    <script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
-    <script src="assets/js/lightbox/js/lightbox.min.js"></script>
-    <script src="assets/js/wow/wow.min.js"></script>
-    <script src="assets/js/jquery.fitvids.js"></script>
-    <script src="assets/js/functions.js"></script>
-    <script src="assets/js/initialise-functions.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.easing.js"></script>
+    <script type="text/javascript" src="assets/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="assets/js/iziModal.min.js"></script>
+    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
 </body>
 
 </html>
