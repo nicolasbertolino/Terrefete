@@ -468,7 +468,8 @@ section {
 /* Modal */
 
 .iziModal-content .icon-close {
-  background: #ccc;
+  background: inherit;
+  color: rgba(225, 225, 225, 0.8);
   position: absolute;
   right: 10px;
   top: 15px;
