@@ -55,7 +55,7 @@ $(window).on('load', function() {
       overlayColor: 'rgba(0, 0, 0, 0.5)',
       borderBottom: false,
       transitionIn: 'fadeInDown',
-      transitionOut: 'fadeOutUp'
+      transitionOut: 'fadeOut'
   });
 });
 
