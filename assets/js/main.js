@@ -1,3 +1,26 @@
+// Navbar on active
+
+var sections = $("section"),
+  nav = $("nav"),
+  nav_height = nav.outerHeight();
+
+$(window).on("scroll", function() {
+  var cur_pos = $(this).scrollTop();
+
+  sections.each(function() {
+    var top = $(this).offset().top - nav_height,
+      bottom = top + $(this).outerHeight();
+
+    if (cur_pos >= top && cur_pos <= bottom) {
+      nav.find("a").removeClass("active");
+      sections.removeClass("active");
+
+      $(this).addClass("active");
+      nav.find('a[href="#' + $(this).attr("id") + '"]').addClass("active");
+    }
+  });
+});
+
 // Scroll to anchor
 
 $(window).on("load", function() {
@@ -45,17 +68,17 @@ $(function() {
 
 // Modal
 
-$(window).on('load', function() {
+$(window).on("load", function() {
   $(".iziModal").iziModal({
-      width: 800,
-      radius: 0,
-      padding: 50,
-      top: 20,
-      bottom: 20,
-      overlayColor: 'rgba(0, 0, 0, 0.5)',
-      borderBottom: false,
-      transitionIn: 'fadeInDown',
-      transitionOut: 'fadeOut'
+    width: 800,
+    radius: 0,
+    padding: 50,
+    top: 20,
+    bottom: 20,
+    overlayColor: "rgba(0, 0, 0, 0.5)",
+    borderBottom: false,
+    transitionIn: "fadeInDown",
+    transitionOut: "fadeOut"
   });
 });
 
