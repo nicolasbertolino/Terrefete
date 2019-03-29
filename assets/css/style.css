@@ -176,16 +176,10 @@ section {
 .randonnees,
 .histoire,
 .reserver {
-  height: 100%;
-}
-
-#accueil,
-#maison,
-#randonnees,
-#histoire,
-#reserver {
+  min-height: 100vh;
   display: flex;
-  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .container {
