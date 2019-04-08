@@ -160,24 +160,12 @@ a.active {
   }
 }
 
-/* Sections */
+/* Layout */
 
 section {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.accueil,
-.maison,
-.activites,
-.randonnees,
-.histoire,
-.reserver {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
 }
@@ -185,10 +173,6 @@ section {
 .container {
   padding: 0 150px 250px 600px;
   z-index: 3;
-}
-
-#no-margin-top-auto {
-  margin-top: 0;
 }
 
 @media (max-width: 1500.98px) {
@@ -200,9 +184,6 @@ section {
 @media (max-width: 1199.98px) {
   .container {
     padding: 0 100px 200px 350px;
-  }
-  .maison {
-    height: auto;
   }
 }
 
@@ -224,16 +205,7 @@ section {
     margin: auto;
     padding: 0 50px;
   }
-
-  .accueil,
-  .maison,
-  .activites,
-  .randonnees,
-  .histoire,
-  .reserver {
-    height: auto;
-  }
-
+  
   .subtitle {
     text-align: center;
   }
