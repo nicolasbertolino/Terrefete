@@ -63,7 +63,16 @@ $('a[href="#top"]').on("click", function() {
 // Tabs
 
 $(function() {
-  $("#tabs").tabs();
+  $("#tabs").tabs({
+    hide: { effect: "fade", duration: 500 }
+  });
+});
+
+// Tabs anchors active
+
+$(".tabpanel a").on("click", function(e) {
+  $(".selected").removeClass("selected");
+  $(this).addClass("selected");
 });
 
 // Modal

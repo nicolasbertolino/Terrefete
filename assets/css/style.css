@@ -359,14 +359,12 @@ section {
   width: 120%;
 }
 
-.tabnav:active::after,
-.tabnav:focus::after {
-  width: 120%;
+a.selected {
+  color: white;
 }
 
-.tabnav:focus,
-.tabnav:active {
-  color: white;
+a.selected::after {
+  width: 120%;
 }
 
 .tab {
