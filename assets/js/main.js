@@ -1,123 +1,68 @@
-// Navbar on active
-
-var sections = $("section"),
-  nav = $("nav"),
-  nav_height = nav.outerHeight();
-
-$(window).on("scroll", function() {
-  var cur_pos = $(this).scrollTop();
-
-  sections.each(function() {
-    var top = $(this).offset().top - nav_height,
-      bottom = top + $(this).outerHeight();
-
-    if (cur_pos >= top && cur_pos <= bottom) {
-      nav.find("a").removeClass("active");
-      sections.removeClass("active");
-
-      $(this).addClass("active");
-      nav.find('a[href="#' + $(this).attr("id") + '"]').addClass("active");
-    }
-  });
+// Fullpagejs
+new fullpage("#fullpage", {
+  anchors: ["0", "1"],
+  navigation: true,
+  lockAnchors: true,
+  scrollOverflow: true
 });
 
-// Scroll to anchor
+function scrollFunction() {
+  document.getElementById("scroll").click(fullpage_api.moveTo(1));
+}
 
-$(window).on("load", function() {
-  $(".smoothscroll").on("click", function(e) {
-    var target = this.hash;
-    var $target = $(target);
-    $("html, body")
-      .stop()
-      .animate(
-        {
-          scrollTop: $target.offset().top
-        },
-        1200,
-        "easeInOutCubic"
-      );
-    e.preventDefault();
-  });
-});
+function topFunction() {
+  document.getElementById("top").click(fullpage_api.moveTo(0));
+}
 
-// Scroll Top
+//Scrollable sections
+function testing(){
+  //forcing fullPage.js to recalculate dimensions.
+  setTimeout(function(){
+      fullpage_api.reBuild(); 
+  }, 500);
+};
+// document.addEventListener("DOMContentLoaded", function(event) {
+//   let a = document.getElementById("environs");
+//   let b = document.getElementById("montagne");
+//   let c = document.getElementById("reservations");
+//   function resize() {
+//     if (window.innerWidth < 1129) {
+//       a.classList.remove("fp-noscroll");
+//       b.classList.remove("fp-noscroll");
+//       c.classList.remove("fp-noscroll");
+//     } else {
+//       a.classList.add("fp-noscroll");
+//       b.classList.add("fp-noscroll");
+//       c.classList.add("fp-noscroll");
+//     }
+//   }
+//   window.onload = resize;
+// });
 
-$(window).scroll(function() {
-  if ($(this).scrollTop() > 100) {
-    $(".scroll-top").addClass("scroll-top-visible");
-  } else {
-    $(".scroll-top").removeClass("scroll-top-visible");
-  }
-});
+// Cursor
+const cursor = document.querySelector(".cursor");
+let link = document.querySelector(".logo");
 
-$('a[href="#top"]').on("click", function() {
-  $("html, body").animate(
-    {
-      scrollTop: 0
-    },
-    "slow"
-  );
-  return false;
-});
-
-// Tabs
-
-$(function() {
-  $("#tabs").tabs({
-    hide: { effect: "fade", duration: 500 }
-  });
-});
-
-// Tabs anchors active
-
-$(".tabpanel a").on("click", function(e) {
-  $(".selected").removeClass("selected");
-  $(this).addClass("selected");
-});
-
-// Modal
-
-$(window).on("load", function() {
-  $(".iziModal").iziModal({
-    width: 800,
-    radius: 0,
-    padding: 50,
-    top: 20,
-    bottom: 20,
-    overlayColor: "rgba(0, 0, 0, 0.5)",
-    borderBottom: false,
-    transitionIn: "fadeInDown",
-    transitionOut: "fadeOut"
-  });
-});
-
-// Parallax
-
-$(".jarallax").each(function() {
-  if ($(this).attr("data-gradient") == 1) {
-    $(this).append('<div class="overlay-background overlay-gradient"></div>');
-    $(this)
-      .find(".overlay-background")
-      .css("opacity", $(this).attr("data-overlay"));
-  } else {
-    $(this).append('<div class="overlay-background"></div>');
-    $(this)
-      .find(".overlay-background")
-      .css("opacity", $(this).attr("data-overlay"));
-  }
-});
-
-$("[data-background]").each(function() {
-  $(this).css(
-    "background-image",
-    "url(" + $(this).attr("data-background") + ")"
+document.addEventListener("mousemove", e => {
+  cursor.setAttribute(
+    "style",
+    "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
   );
 });
 
-$("[data-mY]").each(function() {
-  $(this).css("margin-top", $(this).attr("data-mY"));
+document.addEventListener("wheel", e => {
+  cursor.setAttribute(
+    "style",
+    "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
+  );
 });
 
-$("[data-color]").each(function() {
-  $(this).css("color", $(this).attr("data-color"));
+link.addEventListener("mouseenter", e => {
+  cursor.classList.toggle("expand");
 });
+
+link.addEventListener("mouseleave", e => {
+  cursor.classList.remove("expand");
+});
+
+
