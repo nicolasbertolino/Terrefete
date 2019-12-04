@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
       b.classList.add("fp-noscroll");
       c.classList.add("fp-noscroll");
     }
+    fullpage_api.reBuild();
   }
   window.onload = resize;
 });
