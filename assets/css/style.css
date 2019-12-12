@@ -176,11 +176,13 @@ h4 {
 .grid {
   display: grid;
   grid-template-columns: 15% 1fr 15%;
+  min-height: 100%;
 }
 
 .container {
   grid-column: 2;
   margin: 50px 0;
+  align-self: center;
 }
 
 .container span {

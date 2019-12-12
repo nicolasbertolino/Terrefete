@@ -15,24 +15,24 @@ function topFunction() {
 }
 
 //Scrollable sections
-document.addEventListener("DOMContentLoaded", function(event) {
-  let a = document.getElementById("environs");
-  let b = document.getElementById("montagne");
-  let c = document.getElementById("reservations");
-  function resize() {
-    if (window.innerWidth < 1129) {
-      a.classList.remove("fp-noscroll");
-      b.classList.remove("fp-noscroll");
-      c.classList.remove("fp-noscroll");
-    } else {
-      a.classList.add("fp-noscroll");
-      b.classList.add("fp-noscroll");
-      c.classList.add("fp-noscroll");
-    }
-    fullpage_api.reBuild();
-  }
-  window.onload = resize;
-});
+// document.addEventListener("DOMContentLoaded", function(event) {
+//   let a = document.getElementById("environs");
+//   let b = document.getElementById("montagne");
+//   let c = document.getElementById("reservations");
+//   function resize() {
+//     if (window.innerWidth < 1129) {
+//       a.classList.remove("fp-noscroll");
+//       b.classList.remove("fp-noscroll");
+//       c.classList.remove("fp-noscroll");
+//     } else {
+//       a.classList.add("fp-noscroll");
+//       b.classList.add("fp-noscroll");
+//       c.classList.add("fp-noscroll");
+//     }
+//     fullpage_api.reBuild();
+//   }
+//   window.onload = resize;
+// });
 
 // Cursor
 const cursor = document.querySelector(".cursor");
@@ -53,7 +53,7 @@ document.addEventListener("wheel", e => {
 });
 
 link.addEventListener("mouseenter", e => {
-  cursor.classList.toggle("expand");
+  cursor.classList.add("expand");
 });
 
 link.addEventListener("mouseleave", e => {
