@@ -36,28 +36,17 @@ function topFunction() {
 
 // Cursor
 const cursor = document.querySelector(".cursor");
-let link = document.querySelector(".logo");
 
 document.addEventListener("mousemove", e => {
-  cursor.setAttribute(
-    "style",
-    "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
-  );
+  cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
 });
 
 document.addEventListener("wheel", e => {
-  cursor.setAttribute(
-    "style",
-    "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;"
-  );
+  cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
 });
 
-link.addEventListener("mouseenter", e => {
-  cursor.classList.add("expand");
+document.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("mouseenter", () => cursor.classList.add("condense"));
+  link.addEventListener("mouseleave", () => cursor.classList.remove("condense"));
 });
-
-link.addEventListener("mouseleave", e => {
-  cursor.classList.remove("expand");
-});
-
 
