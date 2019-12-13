@@ -16,8 +16,12 @@ body {
   color: whitesmoke;
 }
 
-::selection,
 ::-moz-selection {
+  background: whitesmoke;
+  color: #282828;
+}
+git
+::selection {
   background: whitesmoke;
   color: #282828;
 }
