@@ -294,3 +294,68 @@ html.fp-enabled,
   visibility: visible;
   opacity: 1;
 }
+
+/* Animations */
+.indexOne,
+.indexTwo,
+.indexThree,
+.indexFive,
+.indexSix,
+.indexSeven {
+  transform: translateY(100vh);
+  transition: 0.5s ease;
+  z-index: 1;
+}
+
+.fp-viewing-1 .indexOne {
+  transform: translateY(0);
+}
+
+.fp-viewing-2 .indexOne {
+  transform: translateY(-100vh);
+}
+
+.fp-viewing-2 .indexTwo {
+  transform: translateY(0);
+}
+
+.fp-viewing-3 .indexTwo {
+  transform: translateY(-100vh);
+}
+
+.fp-viewing-3 .indexThree {
+  transform: translateY(0);
+}
+
+.fp-viewing-4-0 .indexThree,
+.fp-viewing-4-1 .indexThree,
+.fp-viewing-4-2 .indexThree,
+.fp-viewing-4-3 .indexThree,
+.fp-viewing-4-4 .indexThree,
+.fp-viewing-4-5 .indexThree,
+.fp-viewing-4-6 .indexThree,
+.fp-viewing-4-7 .indexThree,
+.fp-viewing-4-8 .indexThree,
+.fp-viewing-4-9 .indexThree {
+  transform: translateY(-100vh);
+}
+
+.fp-viewing-5 .indexFive {
+  transform: translateY(0);
+}
+
+.fp-viewing-6 .indexFive {
+  transform: translateY(-100vh);
+}
+
+.fp-viewing-6 .indexSix {
+  transform: translateY(0);
+}
+
+.fp-viewing-7 .indexSix {
+  transform: translateY(-100vh);
+}
+
+.fp-viewing-7 .indexSeven {
+  transform: translateY(0);
+}
