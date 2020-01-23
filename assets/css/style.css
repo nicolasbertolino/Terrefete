@@ -20,7 +20,7 @@ body {
   background: whitesmoke;
   color: #282828;
 }
-git
+
 ::selection {
   background: whitesmoke;
   color: #282828;
@@ -35,19 +35,19 @@ git
 
 /* Custom Cursor */
 .cursor {
-  width: 20px;
-  height: 20px;
+  width: 34px;
+  height: 34px;
   border: 2px solid whitesmoke;
   border-radius: 50%;
   position: absolute;
   z-index: 9999;
   pointer-events: none;
-  transition: 0.2s ease-out;
+  transition: 0.1s ease-out;
 }
 
 .condense {
-  transform: scale(.5);
-  border-width: 10px;
+  transform: scale(.4);
+  border-width: 17px;
 }
 
 @media screen and (max-width: 1024px) {
