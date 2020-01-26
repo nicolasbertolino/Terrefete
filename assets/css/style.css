@@ -46,7 +46,7 @@ body {
 }
 
 .condense {
-  transform: scale(.4);
+  transform: scale(.3);
   border-width: 17px;
 }
 
