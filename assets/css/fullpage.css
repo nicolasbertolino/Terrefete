@@ -101,7 +101,7 @@ html.fp-enabled,
   overflow: hidden;
   height: 100%;
 }
-@media screen and (max-width:1129px) {
+@media screen and (max-width: 1129px) {
   .fp-scroller {
     height: auto;
   }
@@ -179,7 +179,7 @@ html.fp-enabled,
   width: 12px;
   margin: -6px 0 0 -6px;
   border-radius: 100%;
-  transition: .3s ease-in;
+  transition: 0.3s ease-in;
 }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
@@ -210,7 +210,7 @@ html.fp-enabled,
   color: #fff;
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   white-space: nowrap;
   max-width: 220px;
   overflow: hidden;
@@ -288,7 +288,7 @@ html.fp-enabled,
   top: 0;
   visibility: hidden;
   opacity: 0;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.5s ease;
 }
 
 .fp-slide.active {
@@ -358,5 +358,103 @@ html.fp-enabled,
 }
 
 .fp-viewing-7 .indexSeven {
+  transform: translateY(0);
+}
+
+/* All Indexes */
+.indexOne span,
+.indexTwo span,
+.indexThree span,
+.indexFive span,
+.indexSix span,
+.indexSeven span {
+  transform: translateY(100vh);
+  transition: 0.5s ease;
+  transition-delay: 0.1s;
+}
+
+.indexOne p,
+.indexTwo p,
+.indexThree p,
+.indexFive p,
+.indexSix p,
+.indexSeven p {
+  transform: translateY(100vh);
+  transition: 0.5s ease;
+  transition-delay: 0.2s;
+}
+
+/* IndexOne */
+.indexOne p:last-child {
+  transition-delay: 0.3s;
+}
+
+.fp-viewing-1 .indexOne span,
+.fp-viewing-1 .indexOne p,
+.fp-viewing-1 .indexOne p:last-child {
+  transform: translateY(0);
+}
+
+/* IndexTwo */
+.fp-viewing-2 .indexTwo span,
+.fp-viewing-2 .indexTwo p {
+  transform: translateY(0);
+}
+
+/* IndexThree */
+.fp-viewing-3 .indexThree span,
+.fp-viewing-3 .indexThree p {
+  transform: translateY(0);
+}
+
+/* IndexFive */
+.indexFive h3 {
+  transform: translateY(100vh);
+  transition: 0.5s ease;
+  transition-delay: 0.2s;
+}
+
+.indexFive p {
+  transition-delay: 0.3s;
+}
+
+.fp-viewing-5 .indexFive span,
+.fp-viewing-5 .indexFive h3,
+.fp-viewing-5 .indexFive p {
+  transform: translateY(0);
+}
+
+/* IndexSix */
+.indexSix h3 {
+  transform: translateY(100vh);
+  transition: 0.5s ease;
+  transition-delay: 0.2s;
+}
+
+.indexSix p {
+  transition-delay: 0.3s;
+}
+
+.fp-viewing-6 .indexSix span,
+.fp-viewing-6 .indexSix h3,
+.fp-viewing-6 .indexSix p {
+  transform: translateY(0);
+}
+
+/* IndexSeven */
+.indexSeven .first {
+  transition-delay: 0.3s;
+}
+
+.indexSeven .second {
+  transition-delay: 0.4s;
+}
+
+.indexSeven .third {
+  transition-delay: 0.5s;
+}
+
+.fp-viewing-7 .indexSeven span,
+.fp-viewing-7 .indexSeven p {
   transform: translateY(0);
 }
