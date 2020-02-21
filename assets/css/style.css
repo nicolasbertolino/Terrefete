@@ -159,9 +159,8 @@ h4 {
 
 /* Section 0 - Intro */
 #intro {
-  background-image: url("https://images.unsplash.com/photo-1476908965434-f988d59d7abd?ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80");
+  background-image: url(../images/backgrounds/bg-intro-dark.jpg);
   background-size: cover;
-  background-position: center;
   z-index: 1;
 }
 
@@ -189,19 +188,18 @@ h4 {
 
 /* Section 1, 2, 3 - La Maison */
 #maison {
-  background-image: url("https://images.unsplash.com/photo-1517404656827-b10222b9ec59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-image: url(../images/backgrounds/bg-maison-dark.jpg);
   background-size: cover;
-  background-position: center;
 }
 
 #cozy {
-  background-image: url("https://images.unsplash.com/photo-1414124488080-0188dcbb8834?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-image: url(../images/backgrounds/bg-cozy-dark.jpg);
   background-size: cover;
   background-position: center;
 }
 
 #jardin {
-  background-image: url("https://images.unsplash.com/photo-1489295747923-70dacc9221e5");
+  background-image: url(../images/backgrounds/bg-jardin-dark.jpg);
   background-size: cover;
   background-position: top;
 }
@@ -243,64 +241,62 @@ h4 {
 }
 
 .s0 {
-  background-image: url("https://www.terrefete.com/assets/images/terrasse4.jpg");
+  background-image: url(https://www.terrefete.com/assets/images/terrasse4.jpg);
 }
 
 .s1 {
-  background-image: url("https://www.terrefete.com/assets/images/terrasse2.jpg");
+  background-image: url(https://www.terrefete.com/assets/images/terrasse2.jpg);
 }
 
 .s2 {
-  background-image: url("https://www.terrefete.com/assets/images/cuisine2.jpg");
+  background-image: url(https://www.terrefete.com/assets/images/cuisine2.jpg);
 }
 
 .s3 {
-  background-image: url("https://www.terrefete.com/assets/images/sejour3.jpg");
+  background-image: url(https://www.terrefete.com/assets/images/sejour3.jpg);
 }
 
 .s4 {
-  background-image: url("https://www.terrefete.com/assets/images/sejour1.jpg");
+  background-image: url(https://www.terrefete.com/assets/images/sejour1.jpg);
 }
 
 .s5 {
-  background-image: url("https://www.terrefete.com/assets/images/salledebain1.jpg");
+  background-image: url(https://www.terrefete.com/assets/images/salledebain1.jpg);
 }
 
 .s6 {
-  background-image: url("https://www.terrefete.com/assets/images/chambre1.jpg");
+  background-image: url(https://www.terrefete.com/assets/images/chambre1.jpg);
 }
 
 .s7 {
-  background-image: url("https://www.terrefete.com/assets/images/jardin6.jpg");
+  background-image: url(https://www.terrefete.com/assets/images/jardin6.jpg);
 }
 
 .s8 {
-  background-image: url("https://www.terrefete.com/assets/images/jardin4.jpg");
+  background-image: url(https://www.terrefete.com/assets/images/jardin4.jpg);
 }
 
 .s9 {
-  background-image: url("https://www.terrefete.com/assets/images/jardin5.jpg");
+  background-image: url(https://www.terrefete.com/assets/images/jardin5.jpg);
 }
 
 /* Section 5 - Les Environs */
 #environs {
-  background-image: url("https://images.unsplash.com/photo-1534146789009-76ed5060ec70?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2153&q=80");
+  background-image: url(../images/backgrounds/bg-environs-dark.jpg);
   background-size: cover;
-  background-position: center;
 }
 
 /* Section 6 - En Montagne */
 #montagne {
-  background-image: url("https://images.unsplash.com/photo-1511519991062-53acadf7be18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-image: url(../images/backgrounds/bg-montagne-dark.jpg);
   background-size: cover;
-  background-position: center;
 }
 
 /* Section 7 - Réservations */
 #reservations {
-  background-image: url("../images/bg-reservations.jpg");
+  background-image: url(../images/backgrounds/bg-reservations-dark.jpg);
   background-size: cover;
-  background-position-y: 65%;
+  background-position: bottom;
 }
 
 /* Footer */
