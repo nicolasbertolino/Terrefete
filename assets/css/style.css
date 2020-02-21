@@ -81,7 +81,7 @@ ul {
 }
 
 p {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.8rem;
 }
 
@@ -96,6 +96,10 @@ h2 {
   margin: 0;
   font-family: satisfy, sans-serif;
   line-height: 1;
+}
+
+h3 {
+  font-size: 19px;
 }
 
 h4 {
