@@ -390,20 +390,45 @@ html.fp-enabled,
 }
 
 .fp-viewing-1 .indexOne span,
+.fp-viewing-2 .indexOne span,
 .fp-viewing-1 .indexOne p,
-.fp-viewing-1 .indexOne p:last-child {
+.fp-viewing-2 .indexOne p,
+.fp-viewing-1 .indexOne p:last-child,
+.fp-viewing-2 .indexOne p:last-child {
   transform: translateY(0);
 }
 
 /* IndexTwo */
 .fp-viewing-2 .indexTwo span,
-.fp-viewing-2 .indexTwo p {
+.fp-viewing-3 .indexTwo span,
+.fp-viewing-2 .indexTwo p,
+.fp-viewing-3 .indexTwo p {
   transform: translateY(0);
 }
 
 /* IndexThree */
 .fp-viewing-3 .indexThree span,
-.fp-viewing-3 .indexThree p {
+.fp-viewing-4-0 .indexThree span,
+.fp-viewing-4-1 .indexThree span,
+.fp-viewing-4-2 .indexThree span,
+.fp-viewing-4-3 .indexThree span,
+.fp-viewing-4-4 .indexThree span,
+.fp-viewing-4-5 .indexThree span,
+.fp-viewing-4-6 .indexThree span,
+.fp-viewing-4-7 .indexThree span,
+.fp-viewing-4-8 .indexThree span,
+.fp-viewing-4-9 .indexThree span,
+.fp-viewing-3 .indexThree p,
+.fp-viewing-4-0 .indexThree p,
+.fp-viewing-4-1 .indexThree p,
+.fp-viewing-4-2 .indexThree p,
+.fp-viewing-4-3 .indexThree p,
+.fp-viewing-4-4 .indexThree p,
+.fp-viewing-4-5 .indexThree p,
+.fp-viewing-4-6 .indexThree p,
+.fp-viewing-4-7 .indexThree p,
+.fp-viewing-4-8 .indexThree p,
+.fp-viewing-4-9 .indexThree p {
   transform: translateY(0);
 }
 
@@ -414,14 +439,13 @@ html.fp-enabled,
   transition-delay: 0.2s;
 }
 
-.indexFive p {
-  transition-delay: 0.3s;
-}
-
 .fp-viewing-5 .indexFive span,
+.fp-viewing-6 .indexFive span,
 .fp-viewing-5 .indexFive h3,
-.fp-viewing-5 .indexFive p {
-  transform: translateY(0);
+.fp-viewing-6 .indexFive h3,
+.fp-viewing-5 .indexFive p,
+.fp-viewing-6 .indexFive p {
+transform: translateY(0);
 }
 
 /* IndexSix */
@@ -431,27 +455,18 @@ html.fp-enabled,
   transition-delay: 0.2s;
 }
 
-.indexSix p {
-  transition-delay: 0.3s;
-}
-
 .fp-viewing-6 .indexSix span,
+.fp-viewing-7 .indexSix span,
 .fp-viewing-6 .indexSix h3,
-.fp-viewing-6 .indexSix p {
+.fp-viewing-7 .indexSix h3,
+.fp-viewing-6 .indexSix p,
+.fp-viewing-7 .indexSix p {
   transform: translateY(0);
 }
 
 /* IndexSeven */
-.indexSeven .first {
+.indexSeven p:last-child {
   transition-delay: 0.3s;
-}
-
-.indexSeven .second {
-  transition-delay: 0.4s;
-}
-
-.indexSeven .third {
-  transition-delay: 0.5s;
 }
 
 .fp-viewing-7 .indexSeven span,
