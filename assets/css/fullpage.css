@@ -370,7 +370,7 @@ html.fp-enabled,
 .indexSeven span {
   transform: translateY(100vh);
   transition: 0.5s ease;
-  transition-delay: 0.1s;
+  transition-delay: 0.05s;
 }
 
 .indexOne p,
@@ -381,12 +381,12 @@ html.fp-enabled,
 .indexSeven p {
   transform: translateY(100vh);
   transition: 0.5s ease;
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 
 /* IndexOne */
 .indexOne p:last-child {
-  transition-delay: 0.3s;
+  transition-delay: 0.15s;
 }
 
 .fp-viewing-1 .indexOne span,
@@ -436,7 +436,7 @@ html.fp-enabled,
 .indexFive h3 {
   transform: translateY(100vh);
   transition: 0.5s ease;
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 
 .fp-viewing-5 .indexFive span,
@@ -452,7 +452,7 @@ transform: translateY(0);
 .indexSix h3 {
   transform: translateY(100vh);
   transition: 0.5s ease;
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 
 .fp-viewing-6 .indexSix span,
@@ -466,7 +466,7 @@ transform: translateY(0);
 
 /* IndexSeven */
 .indexSeven p:last-child {
-  transition-delay: 0.3s;
+  transition-delay: 0.15s;
 }
 
 .fp-viewing-7 .indexSeven span,
