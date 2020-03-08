@@ -77,7 +77,7 @@ ul {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: calc(1em + 0.1vw);
   line-height: 1.8rem;
 }
 
