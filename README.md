@@ -12,7 +12,7 @@ The website is making use of the [fullPage.js](https://alvarotrigo.com/fullPage/
 
 ## Assets
 
-As in its current state the website doesn't host great quality photos of the house as they were all taken quite some ago with a medium quality camera. For the time being I made use of some cool pictures from Unsplash to fill in the page, but it is planned to have better shots of the house taken this spring or summer which will replace the entirety of the current photos pool.
+As in its current state the website doesn't host great quality photos of the house as they were all taken quite some ago with a medium quality camera. For the time being I made use of some pretty pictures from Unsplash to fill in the page, but it is planned to have better shots of the house taken this spring or summer which will replace the entirety of the current photos pool.
 
 On the fonts side I used two fantastic fonts: [Azo Sans](https://fonts.adobe.com/fonts/azo-sans) for the paragraphs which is very easy and pleasant to read and made it contrast with [Satisfy](https://fonts.adobe.com/fonts/satisfy), a scripted style font which gaiety and very smooth curves go as a reminder of the mountains in a merry way.
 
