@@ -1,4 +1,22 @@
-# Terrefète
-[www.terrefete.com](https://www.terrefete.com/)
+<p align="center">
+  <img src="https://i.imgur.com/o5KYFUW.png">
+</p>
 
-My third website built over the course of december 2018. It showcases a cottage located in the Pyrénées, France.
+# Terrefète
+
+< Description >
+It showcases a cottage located in the Pyrénées, France.
+
+## Features
+
+< Features >
+
+## Assets
+
+< Assets >
+
+## Thank you
+
+< Thanks >
+
+[www.terrefete.com](https://www.terrefete.com/)
