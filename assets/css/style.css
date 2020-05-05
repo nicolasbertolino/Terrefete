@@ -31,19 +31,14 @@ body {
 
 /* Custom Cursor */
 .cursor {
-  width: 34px;
-  height: 34px;
-  border: 2px solid whitesmoke;
+  width: 10px;
+  height: 10px;
+  border: 5px solid whitesmoke;
   border-radius: 50%;
-  position: absolute;
+  position: fixed;
   z-index: 9999;
   pointer-events: none;
-  transition: 0.1s ease-out;
-}
-
-.condense {
-  transform: scale(.3);
-  border-width: 17px;
+  transition: 0.2s ease-out;
 }
 
 @media screen and (max-width: 1024px) {

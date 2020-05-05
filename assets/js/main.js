@@ -20,14 +20,7 @@ const cursor = document.querySelector(".cursor");
 document.addEventListener("mousemove", e => {
   cursor.setAttribute(
     "style",
-    "top: " + (e.pageY - 17) + "px; left: " + (e.pageX - 17) + "px;"
-  );
-});
-
-document.querySelectorAll("a").forEach(link => {
-  link.addEventListener("mouseenter", () => cursor.classList.add("condense"));
-  link.addEventListener("mouseleave", () =>
-    cursor.classList.remove("condense")
+    "top: " + (e.clientY - 5) + "px; left: " + (e.clientX - 5) + "px;"
   );
 });
 
