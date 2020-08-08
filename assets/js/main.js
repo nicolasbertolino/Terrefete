@@ -16,11 +16,23 @@ function topFunction() {
 
 // Cursor
 const cursor = document.querySelector(".cursor");
+const outerCursor = document.querySelector(".outer-cursor");
 
 document.addEventListener("mousemove", e => {
   cursor.setAttribute(
     "style",
     "top: " + (e.clientY - 5) + "px; left: " + (e.clientX - 5) + "px;"
+  );
+  outerCursor.setAttribute(
+    "style",
+    "top: " + (e.clientY - 25) + "px; left: " + (e.clientX - 25) + "px;"
+  );
+});
+
+document.querySelectorAll(["a", ".fp-controlArrow"]).forEach((link) => {
+  link.addEventListener("mouseenter", () => outerCursor.classList.add("expand"));
+  link.addEventListener("mouseleave", () =>
+    outerCursor.classList.remove("expand")
   );
 });
 

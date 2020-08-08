@@ -65,7 +65,11 @@ html.fp-enabled,
   text-align: center;
   overflow: visible;
   transition: all 0.3s;
-  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .fp-controlArrow {
+    cursor: pointer;
+  }
 }
 .fp-controlArrow.fp-prev {
   left: calc(50% - 25%);
@@ -168,8 +172,13 @@ html.fp-enabled,
   z-index: 1;
   width: 100%;
   height: 100%;
-  cursor: pointer;
   text-decoration: none;
+}
+@media screen and (max-width: 1024px) {
+  #fp-nav ul li a,
+  .fp-slidesNav ul li a {
+    cursor: pointer;
+  }
 }
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span,
@@ -197,6 +206,12 @@ html.fp-enabled,
   -moz-transition: all 0.1s ease-in-out;
   -o-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+}
+@media screen and (max-width: 1024px) {
+  #fp-nav ul li a span,
+  .fp-slidesNav ul li a span {
+    cursor: pointer;
+  }
 }
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span {
