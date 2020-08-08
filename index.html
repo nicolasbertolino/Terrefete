@@ -6,145 +6,318 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Terrefète</title>
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
-    <link rel="stylesheet" href="assets/css/fullpage.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="https://use.typekit.net/ace7bra.css" />
   </head>
 
   <body>
-    <!-- Custom Cursor -->
-    <div class="cursor"></div>
-    <div class="outer-cursor"></div>
-    <!-- Content -->
-    <div id="fullpage">
-      <!-- Page 0 -->
-      <div id="intro" class="section fp-noscroll" data-tooltip="Bienvenue">
-        <div class="title">
-          <h1>TERREFÈTE</h1>
-          <h4>Des vacances vertes dans un cadre authentique.</h4>
-        </div>
-        <div class="scroll">
-          <a onclick="scrollFunction()" id="scroll">La Maison</a>
-          <span></span>
-        </div>
-      </div>
-      <!-- Page 1 -->
-      <div id="maison" class="section fp-noscroll" data-tooltip="Le hameau">
-        <div class="grid">
-          <div class="container indexOne">
+    <!-- Header -->
+    <header>
+      <p>Depuis 2008</p>
+      <div></div>
+      <div class="logo">Terrefète</div>
+      <div></div>
+      <p>
+        <a
+          rel="noopener"
+          target="_blank"
+          href="https://www.abritel.fr/location-vacances/p579857"
+          >Réservez sur Abritel</a
+        >
+      </p>
+    </header>
+    <!-- Responsive nav -->
+    <div class="nav-mobile">
+      <img onclick="plusSlides(-1)" src="assets/images/arrowleft.svg" alt="" />
+      <img onclick="plusSlides(1)" src="assets/images/arrowright.svg" alt="" />
+    </div>
+    <!-- Main -->
+    <div class="slide">
+      <main>
+        <section>
+          <div>
             <h2>Au calme</h2>
-            <span></span>
-            <p>Niché dans la vallée de la Bellongue, au cœur des hauteurs ariègeoises, le hameau de Terrefète respire le calme et l'authenticité, la vraie vie de montagne.</p>
-            <p>La maison est une belle bâtisse de trois étages, chaleureuse et raffinée, imaginée pour s'y sentir bien, en toute simplicité.</p>
+            <p>
+              Niché au cœur de la vallée de la Bellongue, sur les hauteurs
+              ariègeoises, le hameau de Terrefète respire le calme et
+              l'authenticité, la vraie vie de montagne.
+            </p>
           </div>
-        </div>
-      </div>
-      <!-- Page 2 -->
-      <div id="cozy" class="section fp-noscroll" data-tooltip="La maison">
-        <div class="grid">
-          <div class="container indexTwo">
+          <div>
+            <h3>En chiffres</h3>
+            <ul>
+              <li>Maison de 90m²</li>
+              <li>6 Couchages</li>
+              <li>2 Chambres</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <figure>
+            <img src="assets/images/salon.jpg" alt="Salon" />
+          </figure>
+        </section>
+        <section>
+          <div class="coordinates">
+            <a
+              rel="noopener"
+              target="_blank"
+              href="https://goo.gl/maps/yAifurMo4YmoBFAq7"
+            >
+              <p>
+                Terrefète,<br />
+                Augirein
+              </p>
+              <p>42°55'51.6"N 0°55'14.6"E</p>
+            </a>
+          </div>
+          <div>
             <h2>Cozy</h2>
-            <span></span>
-            <p>Pour que tout un chacun se sente comme à la maison et trouve son ambiance.</p>
+            <p>
+              La maison est une belle bâtisse de trois étages, chaleureuse et
+              raffinée, imaginée pour s'y sentir bien, en toute simplicité.
+            </p>
+            <p>
+              Une porte s'ouvre sur une belle terrasse en bois et devant
+              s'élance le jardin, une bouffée d'oxygène au rendez-vous.
+            </p>
           </div>
+        </section>
+      </main>
+      <div class="btm-section">
+        <p>01</p>
+        <div>
+          <p>En images</p>
+          <h1>La Maison</h1>
+          <p>Les environs</p>
         </div>
-      </div>
-      <!-- Page 3 -->
-      <div id="jardin" class="section fp-noscroll" data-tooltip="Le jardin">
-        <div class="grid">
-          <div class="container indexThree">
-            <h2>Un havre de verdure</h2>
-            <span></span>
-            <p>Une porte s'ouvre sur une belle terrasse en bois et devant s'élance le jardin, une bouffée d'oxygène au rendez-vous.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Page 4 -->
-      <div id="photos" class="section fp-noscroll" data-tooltip="En images">
-        <div class="slide s0"></div>
-        <div class="slide s1"></div>
-        <div class="slide s2"></div>
-        <div class="slide s3"></div>
-        <div class="slide s4"></div>
-        <div class="slide s5"></div>
-        <div class="slide s6"></div>
-        <div class="slide s7"></div>
-        <div class="slide s8"></div>
-        <div class="slide s9"></div>
-      </div>
-      <!-- Page 5 -->
-      <div id="environs" class="section" data-tooltip="Les environs">
-        <div class="grid">
-          <div class="container indexFive">
-            <h2>Autour de la maison</h2>
-            <span></span>
-            <div class="columns">
-              <div>
-                <h3>Le Parc Naturel Régional des Pyrénées Ariégeoises</h3>
-                <p>Terrefète est situé au sein du Parc naturel régional, créé en 2009 sur 141 communes des Pyrénées Ariégeoises, pour la richesse et la diversité de leurs patrimoines naturels, culturels et humains.</p>
-                <p>Randonnées moyenne ou haute montagne, circuits VTT, cyclotourisme, tennis, équitation, spéléologie, parapente, kayak en lac de montagne ou en rivière, fêtes locales et folkloriques, gastronomie.</p>
-                <p>Une myriade d'activités à découvrir sur <a class="link" target="_blank" href="http://www.ariegepyrenees.com/">ariegepyrenees.com</a>.</p>
-              </div>
-              <div>
-                <h3>Le Val d'Aran</h3>
-                <p>L'Aran ou le val d'Aran est la vallée voisine du Parc naturel régional des Pyrénées Ariégeoises. C'est une vallée de langue occitane située en Espagne. La Garonne y a sa source avant de se prolonger en France par le Comminges.</p>
-                <p>À explorer : randonnées, rafting, monuments historiques, équitation, sports d'hiver, et bien plus encore.</p>
-                <p><a class="link" target="_blank" href="https://www.tripadvisor.fr/Attractions-g6376359-Activities-Val_d_Aran_Province_of_Lleida_Catalonia.html">Val d'Aran - TripAdvisor</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Page 6 -->
-      <div id="montagne" class="section" data-tooltip="Activités en montagne">
-        <div class="grid">
-          <div class="container indexSix">
-            <h2>En montagne</h2>
-            <span></span>
-            <div class="columns">
-              <div>
-                <h3>L'été...</h3>
-                <p>Les Pyrénées ariégeoises regorgent de randonnées et balades, toutes plus ennivrantes les unes que les autres. Parmi nos préférées la <a class="link" target="_blank" href="https://www.pyrandonnees.fr/rando_cascade_de_nerech.php">Cascade de Nerech</a>, une belle randonnée de quelques heures à travers forêts et rivières.</p>
-                <p>Dans la continuité de ce chemin et pour les plus téméraires, le <a class="link" target="_blank" href="http://www.rando-marche.fr/_3825_320_randonnees-mont-valier">Mont Valier</a> est la montagne emblématique du Couserans et un sommet de plus de 2800m jouissant d'un somptueux panorama.</p>
-                <p>Rendez-vous sur <a class="link" target="_blank" href="http://www.rando-marche.fr/_2825_randonnees-ariege">rando-marche.fr</a> pour consulter toutes les excursions du secteur.</p>
-              </div>
-              <div>
-                <h3>... Comme l'hiver</h3>
-                <p>Outre les différents sentiers environnants sur lesquels braver la neige en chaussures ou raquettes, Terrefète offre un accès à plusieurs stations à proximité.</p>
-                <p><a class="link" target="_blank" href="http://www.mourtis.fr/">Le Mourtis</a> (40min)</p>
-                <p><a class="link" target="_blank" href="https://www.guzet.fr/">Guzet Neige</a> (1h)</p>
-                <p><a class="link" target="_blank" href="http://www.n-py.com/fr/peyragudes">Peyragudes</a> (1h15)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Page 7 -->
-      <div id="reservations" class="section" data-tooltip="Réservations">
-        <div class="grid">
-          <div class="container indexSeven">
-            <h2>Réservations</h2>
-            <span></span>
-            <p>« Retrouvailles familiales dans une maison accueillante, le calme, la nature, les randonnées, les bons conseils de Giuseppe et Sylvie; tous les ingrédients pour passer d'excellentes vacances. »</p>
-            <p>« Une maison propre, charmante et accueillante. Un village et des habitants simples, tolérants, gentils, solidaires. »</p>
-            <p>« Nous avons passé un séjour très agréable et 100% reposant. Le confort est au rendez-vous, et les enfants ne sont pas oubliés avec les jeux et caisses de jouets. »</p>
-            <br />
-            <p>Envie d'air frais ? Réservez sur <a class="link" href="https://www.abritel.fr/location-vacances/p579857">Abritel.fr</a></p>
-          </div>
-        </div>
-        <!-- Footer -->
-        <footer>
-          <p><a onclick="topFunction()" id="top">Retour en haut</a></p>
-          <p>©2020 Sylvie & Giuseppe Bertolino</p>
-          <p>Créé par <a href="https://www.nicolasbertolino.com/">Nicolas Bertolino</a></p>
-        </footer>
       </div>
     </div>
-    <!-- Scritps -->
-    <script src="assets/js/scrolloverflow.min.js"></script>
-    <script src="assets/js/fullpage.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-    <script src="assets/js/charming.min.js"></script>
+    <div class="slide">
+      <main>
+        <section>
+          <div>
+            <h2>Autour de la maison</h2>
+            <h3>Le Parc Naturel Régional des Pyrénées Ariégeoises</h3>
+            <p>
+              Terrefète est situé au sein du Parc Naturel Régional, créé en 2009
+              sur 141 communes des Pyrénées Ariégeoises, pour la richesse et la
+              diversité de leurs patrimoines naturels, culturels et humains.
+            </p>
+            <p>
+              Randonnées moyenne ou haute montagne, circuits VTT, cyclotourisme,
+              tennis, équitation, spéléologie, parapente, kayak en lac de
+              montagne ou en rivière, fêtes locales et folkloriques,
+              gastronomie. Une myriade d'activités à découvrir sur
+              <a
+                rel="noopener"
+                target="_blank"
+                href="http://www.ariegepyrenees.com/"
+                >ariegepyrenees.com</a
+              >.
+            </p>
+          </div>
+        </section>
+        <section>
+          <figure>
+            <img src="assets/images/saint-girons.jpg" alt="Saint-Girons" />
+          </figure>
+        </section>
+        <section>
+          <div>
+            <h2>À proximité de</h2>
+            <h3>Villes et villages</h3>
+            <p>
+              La maison est située au coeur de la vallée de la Bellongue,
+              célèbre pour ses villages au charme authentique, héritage de la
+              <a
+                rel="noopener"
+                target="_blank"
+                href="https://fr.wikipedia.org/wiki/Guerre_des_Demoiselles"
+                >Guerre des Demoiselles</a
+              >, une rébellion célèbre ayant eu lieu en Ariège de 1829 à 1832.
+            </p>
+            <p>
+              Au pied de la vallée et à 23 km de la maison se trouve
+              Saint-Girons, la souriante capitale du Couserans, réputé pour ses
+              rues pittoresques et pour son incontournable marché tous les
+              samedi.
+            </p>
+          </div>
+        </section>
+      </main>
+      <div class="btm-section">
+        <p>02</p>
+        <div>
+          <p>La maison</p>
+          <h1>Les Environs</h1>
+          <p>Les activités</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <main>
+        <section>
+          <div>
+            <h2>Lacez vos chaussures</h2>
+            <h3>L'été...</h3>
+            <p>
+              Les Pyrénées ariégeoises regorgent de randonnées et balades toutes
+              plus ennivrantes les unes que les autres.
+            </p>
+            <p>
+              Parmi nos préférées la
+              <a
+                rel="noopener"
+                target="_blank"
+                href="https://www.pyrandonnees.fr/rando_cascade_de_nerech.php"
+                >Cascade de Nerech</a
+              >, une belle randonnée de quelques heures à travers forêts et
+              rivières.
+            </p>
+            <p>
+              Dans la continuité de ce chemin et pour les plus téméraires, le
+              <a
+                rel="noopener"
+                target="_blank"
+                href="http://www.rando-marche.fr/_3825_320_randonnees-mont-valier"
+                >Mont Valier</a
+              >
+              est la montagne emblématique du Couserans et un sommet de plus de
+              2800m jouissant d'un somptueux panorama.
+            </p>
+          </div>
+        </section>
+        <section>
+          <figure>
+            <img src="assets/images/13.jpg" alt="Randonnée" />
+          </figure>
+        </section>
+        <section>
+          <div>
+            <h2>Ou enfilez vos skis</h2>
+            <h3>... Comme l'hiver</h3>
+            <p>
+              Nombreux sont les sentiers environnants sur lesquels braver la
+              neige en chaussures ou raquettes. Et pour les amoureux de la
+              descente, Terrefète offre un accès à plusieurs stations à
+              proximité.
+            </p>
+            <ul>
+              <li>
+                <a rel="noopener" target="_blank" href="http://www.mourtis.fr/"
+                  >Le Mourtis</a
+                >
+                (40min)
+              </li>
+              <li>
+                <a rel="noopener" target="_blank" href="https://www.guzet.fr/"
+                  >Guzet Neige</a
+                >
+                (1h)
+              </li>
+              <li>
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  href="http://www.n-py.com/fr/peyragudes"
+                  >Peyragudes</a
+                >
+                (1h15)
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <div class="btm-section">
+        <p>03</p>
+        <div>
+          <p>Les environs</p>
+          <h1>Les Activités</h1>
+          <p>En images</p>
+        </div>
+      </div>
+    </div>
+    <div class="slide">
+      <main>
+        <section>
+          <div>
+            <blockquote>
+              « Retrouvailles familiales dans une maison accueillante, le calme,
+              la nature, les randonnées, les bons conseils de Giuseppe et
+              Sylvie; tous les ingrédients pour passer d'excellentes vacances. »
+            </blockquote>
+            <p>
+              - Christian
+            </p>
+          </div>
+        </section>
+        <section id="gallery">
+          <figure>
+            <img src="assets/images/sejour3.jpg" alt="Photo de la maison" />
+          </figure>
+          <figure>
+            <img src="assets/images/cuisine1.jpg" alt="Photo de la maison" />
+          </figure>
+          <figure>
+            <img src="assets/images/cuisine2.jpg" alt="Photo de la maison" />
+          </figure>
+          <figure>
+            <img src="assets/images/sejour1.jpg" alt="Photo de la maison" />
+          </figure>
+          <figure>
+            <img
+              src="assets/images/salledebain1.jpg"
+              alt="Photo de la maison"
+            />
+          </figure>
+          <figure>
+            <img src="assets/images/chambre1.jpg" alt="Photo de la maison" />
+          </figure>
+          <figure>
+            <img src="assets/images/terrasse4.jpg" alt="Photo de la maison" />
+          </figure>
+          <figure>
+            <img src="assets/images/terrasse2.jpg" alt="Photo de la maison" />
+          </figure>
+          <figure>
+            <img src="assets/images/jardin6.jpg" alt="Photo de la maison" />
+          </figure>
+        </section>
+        <section>
+          <div>
+            <blockquote>
+              « Une maison propre, charmante et accueillante. Un village et des
+              habitants simples, tolérants, gentils, solidaires. »
+            </blockquote>
+          </div>
+          <div>
+            <blockquote>
+              « Nous avons passé un séjour très agréable et 100% reposant. Le
+              confort est au rendez-vous, et les enfants ne sont pas oubliés
+              avec les jeux et caisses de jouets. »
+            </blockquote>
+          </div>
+        </section>
+      </main>
+      <div class="btm-section">
+        <p>04</p>
+        <div>
+          <p>Les activités</p>
+          <h1>En Images</h1>
+          <p>La maison</p>
+        </div>
+      </div>
+    </div>
+    <div class="counter">
+      <p><span></span><span>04</span></p>
+    </div>
+    <nav>
+      <img onclick="plusSlides(-1)" src="assets/images/arrowleft.svg" alt="" />
+      <img onclick="plusSlides(1)" src="assets/images/arrowright.svg" alt="" />
+    </nav>
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

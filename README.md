@@ -8,12 +8,12 @@ Terrefète showcases a house to rent located in the Pyrénées, France. Only a h
 
 ## Features
 
-The website is making use of the [fullPage.js](https://alvarotrigo.com/fullPage/) library which grants full screen navigation with DOM elements being hidden until on the viewport. This allowed me to create interesting block animations on appear with some keyframes.
+The website is one big carousel with DOM elements being hidden until on the viewport. This allowed me to create interesting block animations on appear with keyframes.
 
 ## Assets
 
-As in its current state the website doesn't host great quality photos of the house as they were all taken quite some time ago with a medium quality camera. For the time being I made use of some pretty pictures from Unsplash to fill in the page, but it is planned to have better shots of the house taken this spring or summer which will replace the entirety of the current photos pool.
+All photos were taken over the years and are the property of the owners of the website.
 
-On the typography side I used two fantastic fonts: [Azo Sans](https://fonts.adobe.com/fonts/azo-sans) for the paragraphs which is very easy and pleasant to read and made it contrast with [Satisfy](https://fonts.adobe.com/fonts/satisfy), a scripted style font which very smooth curves go as a reminder of the mountains in a merry way.
+The texts are written with [Adobe Garamond](https://fonts.adobe.com/fonts/adobe-garamond), a very mature and classy font, perfect for depicting authenticity. The Terrefète logo is the result of the [Fave Script](https://fonts.adobe.com/fonts/fave) font, a scripted style typography which very smooth curves go as a reminder of the mountains and the easy life.
 
 [www.terrefete.com](https://www.terrefete.com/)
