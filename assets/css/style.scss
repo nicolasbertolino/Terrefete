@@ -320,15 +320,6 @@ nav {
   img {
     cursor: pointer;
     width: 50px;
-    transition: transform 0.7s;
-
-    &:first-child:hover {
-      transform: translateX(-1em);
-    }
-
-    &:last-child:hover {
-      transform: translateX(1em);
-    }
   }
 }
 
@@ -411,7 +402,7 @@ main {
     }
   }
 
-  section:nth-child(2):not(#gallery) {
+  section:nth-child(2) {
     figure {
       clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
       animation: slide-in 1s forwards cubic-bezier(0.33, 1, 0.68, 1);
@@ -455,12 +446,6 @@ main {
       opacity: 0;
       transform: translateY(-30px);
       animation: slide-left 0.6s forwards cubic-bezier(0, 0.55, 0.45, 1);
-    }
-
-    h1 {
-      opacity: 0;
-      animation: fade 1s forwards cubic-bezier(0, 0.55, 0.45, 1);
-      animation-delay: 0.1s;
     }
 
     p:last-child {
