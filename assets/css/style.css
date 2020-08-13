@@ -186,7 +186,7 @@ main .coordinates p:first-child {
 
 @media (max-width: 414px) {
   main {
-    margin-top: 5vh;
+    margin-bottom: 10vh;
   }
 }
 
@@ -292,8 +292,21 @@ section:nth-child(3) ul {
 }
 
 @media (max-width: 414px) {
+  .btm-section {
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--background);
+    border-top: 1px solid var(--font-color);
+  }
   .btm-section div {
+    position: fixed;
+    bottom: unset;
+    top: 96.5%;
     width: 55vw;
+  }
+  .btm-section div h1 {
+    display: none;
   }
 }
 
@@ -361,48 +374,12 @@ nav img {
   }
 }
 
-.nav-mobile {
-  position: absolute;
-  top: 120px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 90vw;
-  display: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  z-index: 1;
-}
-
-.nav-mobile img {
-  cursor: pointer;
-  width: 50px;
-  -webkit-transition: -webkit-transform 0.7s;
-  transition: -webkit-transform 0.7s;
-  transition: transform 0.7s;
-  transition: transform 0.7s, -webkit-transform 0.7s;
-}
-
-.nav-mobile img:first-child:hover {
-  -webkit-transform: translateX(-1em);
-          transform: translateX(-1em);
-}
-
-.nav-mobile img:last-child:hover {
-  -webkit-transform: translateX(1em);
-          transform: translateX(1em);
-}
-
 @media (max-width: 414px) {
-  .nav-mobile {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  nav {
+    position: fixed;
+    bottom: 2vh;
+    height: auto;
+    width: 90vw;
   }
 }
 
