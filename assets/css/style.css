@@ -302,7 +302,7 @@ section:nth-child(3) ul {
   .btm-section div {
     position: fixed;
     bottom: unset;
-    top: 96.5%;
+    top: 96vh;
     width: 55vw;
   }
   .btm-section div h1 {
